@@ -1,0 +1,281 @@
+{
+  "week_order": [
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday"
+  ],
+  "week": {
+    "Monday": {
+      "day": "Monday",
+      "date": "2025-12-01",
+      "children": {
+        "C1": {
+          "clothing": {
+            "code": "uniform",
+            "label": "Uniform"
+          },
+          "pack": [
+            {
+              "code": "water_bottle",
+              "label": "Water bottle"
+            },
+            {
+              "code": "sports_kit",
+              "label": "Sports kit"
+            }
+          ],
+          "snacks": true,
+          "dropoff": "08:15",
+          "pickup": "17:00",
+          "clubs": [
+            {
+              "time": "08:00-08:30",
+              "name": "KS2 Choir",
+              "short_name": "Choir"
+            },
+            {
+              "time": "16:00-17:00",
+              "name": "Netball",
+              "short_name": "Netball"
+            }
+          ]
+        },
+        "C2": {
+          "clothing": {
+            "code": "uniform",
+            "label": "Uniform"
+          },
+          "pack": [
+            {
+              "code": "water_bottle",
+              "label": "Water bottle"
+            },
+            {
+              "code": "sports_kit",
+              "label": "Sports kit"
+            }
+          ],
+          "snacks": true,
+          "dropoff": "08:15",
+          "pickup": "17:00",
+          "clubs": [
+            {
+              "time": "08:00-08:30",
+              "name": "KS2 Choir",
+              "short_name": "Choir"
+            },
+            {
+              "time": "12:45-13:15",
+              "name": "Dodgeball",
+              "short_name": "Dodgeball"
+            },
+            {
+              "time": "16:00-17:00",
+              "name": "Netball",
+              "short_name": "Netball"
+            }
+          ]
+        }
+      }
+    },
+    "Tuesday": {
+      "day": "Tuesday",
+      "date": "2025-12-02",
+      "children": {
+        "C1": {
+          "clothing": {
+            "code": "football_kit",
+            "label": "Football kit"
+          },
+          "pack": [
+            {
+              "code": "uniform",
+              "label": "Uniform"
+            }
+          ],
+          "snacks": true,
+          "dropoff": "07:30",
+          "pickup": "17:00",
+          "clubs": [
+            {
+              "time": "07:30-08:30",
+              "name": "Girls Football (Westway)",
+              "short_name": "Football"
+            },
+            {
+              "time": "16:00-17:00",
+              "name": "Creative Art Club",
+              "short_name": "Art"
+            }
+          ]
+        },
+        "C2": {
+          "clothing": {
+            "code": "uniform",
+            "label": "Uniform"
+          },
+          "pack": [],
+          "snacks": true,
+          "dropoff": "08:15",
+          "pickup": "17:00",
+          "clubs": [
+            {
+              "time": "08:00-08:30",
+              "name": "Morning Drawing Club",
+              "short_name": "Draw"
+            },
+            {
+              "time": "12:45-13:15",
+              "name": "Chamber Choir (Selective)",
+              "short_name": "Chamb. Choir"
+            },
+            {
+              "time": "16:00-17:00",
+              "name": "Creative Art Club",
+              "short_name": "Art"
+            }
+          ]
+        }
+      }
+    },
+    "Wednesday": {
+      "day": "Wednesday",
+      "date": "2025-12-03",
+      "children": {
+        "C1": {
+          "clothing": {
+            "code": "uniform",
+            "label": "Uniform"
+          },
+          "pack": [
+            {
+              "code": "violin",
+              "label": "Violin"
+            }
+          ],
+          "snacks": false,
+          "dropoff": "07:45",
+          "pickup": "15:45",
+          "clubs": [
+            {
+              "time": "07:45-08:30",
+              "name": "Orchestra (Selective)",
+              "short_name": "Orch."
+            },
+            {
+              "time": "12:30-13:15",
+              "name": "Touch-Typing",
+              "short_name": "Typing"
+            }
+          ]
+        },
+        "C2": {
+          "clothing": {
+            "code": "uniform",
+            "label": "Uniform"
+          },
+          "pack": [],
+          "snacks": false,
+          "dropoff": "08:15",
+          "pickup": "16:00",
+          "clubs": [
+            {
+              "time": "12:45-13:15",
+              "name": "Technical Drawing (Selective)",
+              "short_name": "Tech Draw"
+            }
+          ]
+        }
+      }
+    },
+    "Thursday": {
+      "day": "Thursday",
+      "date": "2025-12-04",
+      "children": {
+        "C1": {
+          "clothing": {
+            "code": "sports_kit",
+            "label": "Sports kit"
+          },
+          "pack": [
+            {
+              "code": "uniform",
+              "label": "Uniform"
+            },
+            {
+              "code": "swim_kit",
+              "label": "Swim kit (goggles, hat, swimsuit, towel)"
+            }
+          ],
+          "snacks": false,
+          "dropoff": "07:45",
+          "pickup": "15:45",
+          "clubs": [
+            {
+              "time": "07:45-08:30",
+              "name": "Fencing",
+              "short_name": "Fencing"
+            }
+          ]
+        },
+        "C2": {
+          "clothing": {
+            "code": "uniform",
+            "label": "Uniform"
+          },
+          "pack": [
+            {
+              "code": "swim_kit",
+              "label": "Swim kit (goggles, hat, swimsuit, towel)"
+            }
+          ],
+          "snacks": false,
+          "dropoff": "08:15",
+          "pickup": "16:00",
+          "clubs": [
+            {
+              "time": "08:00-08:30",
+              "name": "Advanced Musicianship (Selective)",
+              "short_name": "Adv. Mus."
+            },
+            {
+              "time": "12:45-13:15",
+              "name": "Creative Competitors",
+              "short_name": "Creat. Comp."
+            }
+          ]
+        }
+      }
+    },
+    "Friday": {
+      "day": "Friday",
+      "date": "2025-12-05",
+      "children": {
+        "C1": {
+          "clothing": {
+            "code": "uniform",
+            "label": "Uniform"
+          },
+          "pack": [],
+          "snacks": false,
+          "dropoff": "08:15",
+          "pickup": "15:45",
+          "clubs": []
+        },
+        "C2": {
+          "clothing": {
+            "code": "uniform",
+            "label": "Uniform"
+          },
+          "pack": [],
+          "snacks": false,
+          "dropoff": "08:15",
+          "pickup": "16:00",
+          "clubs": []
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+{
+  "by_date": {
+    "__example": {
+      "children": {
+        "C1": {
+          "pickup": "17:30",
+          "snacks": false,
+          "clubs": [
+            { "time": "16:00-17:00", "name": "Creative Art Club", "short_name": "Art" }
+          ]
+        }
+      }
+    }
+  }
+}
