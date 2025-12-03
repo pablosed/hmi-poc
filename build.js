@@ -118,13 +118,28 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
         short_name: shortNameForClub(entry.club)
       }));
 
+    const startTime = (range) => {
+      if (!range) return '';
+      const parts = String(range).split('-');
+      return (parts[0] || '').trim();
+    };
+
     children[kidId] = {
       clothing: { code: clothingCode, label: clothingLabel },
       pack,
       snacks,
       dropoff,
       pickup,
-      clubs: clubsForChild
+      clubs: clubsForChild,
+      pack_display: pack.map(p => p.label).join(', '),
+      clubs_display: clubsForChild.map(c => ({
+        start: startTime(c.time),
+        name: c.short_name
+      })),
+      snack_display: snacks ? 'Yes' : '',
+      snack_line: snacks ? 'Snack: Yes' : '',
+      drop_display: dropoff || '',
+      pick_display: pickup || ''
     };
   }
 

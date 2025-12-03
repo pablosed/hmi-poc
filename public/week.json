@@ -40,7 +40,22 @@
               "name": "Netball",
               "short_name": "Netball"
             }
-          ]
+          ],
+          "pack_display": "Water bottle, Sports kit",
+          "clubs_display": [
+            {
+              "start": "08:00",
+              "name": "Choir"
+            },
+            {
+              "start": "16:00",
+              "name": "Netball"
+            }
+          ],
+          "snack_display": "Yes",
+          "snack_line": "Snack: Yes",
+          "drop_display": "08:15",
+          "pick_display": "17:00"
         },
         "C2": {
           "clothing": {
@@ -76,7 +91,26 @@
               "name": "Netball",
               "short_name": "Netball"
             }
-          ]
+          ],
+          "pack_display": "Water bottle, Sports kit",
+          "clubs_display": [
+            {
+              "start": "08:00",
+              "name": "Choir"
+            },
+            {
+              "start": "12:45",
+              "name": "Dodgeball"
+            },
+            {
+              "start": "16:00",
+              "name": "Netball"
+            }
+          ],
+          "snack_display": "Yes",
+          "snack_line": "Snack: Yes",
+          "drop_display": "08:15",
+          "pick_display": "17:00"
         }
       }
     },
@@ -109,7 +143,22 @@
               "name": "Creative Art Club",
               "short_name": "Art"
             }
-          ]
+          ],
+          "pack_display": "Uniform",
+          "clubs_display": [
+            {
+              "start": "07:30",
+              "name": "Football"
+            },
+            {
+              "start": "16:00",
+              "name": "Art"
+            }
+          ],
+          "snack_display": "Yes",
+          "snack_line": "Snack: Yes",
+          "drop_display": "07:30",
+          "pick_display": "17:00"
         },
         "C2": {
           "clothing": {
@@ -136,7 +185,26 @@
               "name": "Creative Art Club",
               "short_name": "Art"
             }
-          ]
+          ],
+          "pack_display": "",
+          "clubs_display": [
+            {
+              "start": "08:00",
+              "name": "Draw"
+            },
+            {
+              "start": "12:45",
+              "name": "Chamb. Choir"
+            },
+            {
+              "start": "16:00",
+              "name": "Art"
+            }
+          ],
+          "snack_display": "Yes",
+          "snack_line": "Snack: Yes",
+          "drop_display": "08:15",
+          "pick_display": "17:00"
         }
       }
     },
@@ -169,7 +237,22 @@
               "name": "Touch-Typing",
               "short_name": "Typing"
             }
-          ]
+          ],
+          "pack_display": "Violin",
+          "clubs_display": [
+            {
+              "start": "07:45",
+              "name": "Orch."
+            },
+            {
+              "start": "12:30",
+              "name": "Typing"
+            }
+          ],
+          "snack_display": "",
+          "snack_line": "",
+          "drop_display": "07:45",
+          "pick_display": "15:45"
         },
         "C2": {
           "clothing": {
@@ -186,7 +269,18 @@
               "name": "Technical Drawing (Selective)",
               "short_name": "Tech Draw"
             }
-          ]
+          ],
+          "pack_display": "",
+          "clubs_display": [
+            {
+              "start": "12:45",
+              "name": "Tech Draw"
+            }
+          ],
+          "snack_display": "",
+          "snack_line": "",
+          "drop_display": "08:15",
+          "pick_display": "16:00"
         }
       }
     },
@@ -218,7 +312,18 @@
               "name": "Fencing",
               "short_name": "Fencing"
             }
-          ]
+          ],
+          "pack_display": "Uniform, Swim kit (goggles, hat, swimsuit, towel)",
+          "clubs_display": [
+            {
+              "start": "07:45",
+              "name": "Fencing"
+            }
+          ],
+          "snack_display": "",
+          "snack_line": "",
+          "drop_display": "07:45",
+          "pick_display": "15:45"
         },
         "C2": {
           "clothing": {
@@ -245,7 +350,22 @@
               "name": "Creative Competitors",
               "short_name": "Creat. Comp."
             }
-          ]
+          ],
+          "pack_display": "Swim kit (goggles, hat, swimsuit, towel)",
+          "clubs_display": [
+            {
+              "start": "08:00",
+              "name": "Adv. Mus."
+            },
+            {
+              "start": "12:45",
+              "name": "Creat. Comp."
+            }
+          ],
+          "snack_display": "",
+          "snack_line": "",
+          "drop_display": "08:15",
+          "pick_display": "16:00"
         }
       }
     },
@@ -262,7 +382,13 @@
           "snacks": false,
           "dropoff": "08:15",
           "pickup": "15:45",
-          "clubs": []
+          "clubs": [],
+          "pack_display": "",
+          "clubs_display": [],
+          "snack_display": "",
+          "snack_line": "",
+          "drop_display": "08:15",
+          "pick_display": "15:45"
         },
         "C2": {
           "clothing": {
@@ -273,7 +399,13 @@
           "snacks": false,
           "dropoff": "08:15",
           "pickup": "16:00",
-          "clubs": []
+          "clubs": [],
+          "pack_display": "",
+          "clubs_display": [],
+          "snack_display": "",
+          "snack_line": "",
+          "drop_display": "08:15",
+          "pick_display": "16:00"
         }
       }
     }

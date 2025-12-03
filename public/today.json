@@ -1,33 +1,48 @@
 {
-  "day": "Tuesday",
-  "date": "2025-12-02",
+  "day": "Wednesday",
+  "date": "2025-12-03",
   "children": {
     "C1": {
       "clothing": {
-        "code": "football_kit",
-        "label": "Football kit"
+        "code": "uniform",
+        "label": "Uniform"
       },
       "pack": [
         {
-          "code": "uniform",
-          "label": "Uniform"
+          "code": "violin",
+          "label": "Violin"
         }
       ],
-      "snacks": true,
-      "dropoff": "07:30",
-      "pickup": "17:00",
+      "snacks": false,
+      "dropoff": "07:45",
+      "pickup": "15:45",
       "clubs": [
         {
-          "time": "07:30-08:30",
-          "name": "Girls Football (Westway)",
-          "short_name": "Football"
+          "time": "07:45-08:30",
+          "name": "Orchestra (Selective)",
+          "short_name": "Orch."
         },
         {
-          "time": "16:00-17:00",
-          "name": "Creative Art Club",
-          "short_name": "Art"
+          "time": "12:30-13:15",
+          "name": "Touch-Typing",
+          "short_name": "Typing"
         }
-      ]
+      ],
+      "pack_display": "Violin",
+      "clubs_display": [
+        {
+          "start": "07:45",
+          "name": "Orch."
+        },
+        {
+          "start": "12:30",
+          "name": "Typing"
+        }
+      ],
+      "snack_display": "",
+      "snack_line": "",
+      "drop_display": "07:45",
+      "pick_display": "15:45"
     },
     "C2": {
       "clothing": {
@@ -35,26 +50,27 @@
         "label": "Uniform"
       },
       "pack": [],
-      "snacks": true,
+      "snacks": false,
       "dropoff": "08:15",
-      "pickup": "17:00",
+      "pickup": "16:00",
       "clubs": [
         {
-          "time": "08:00-08:30",
-          "name": "Morning Drawing Club",
-          "short_name": "Draw"
-        },
-        {
           "time": "12:45-13:15",
-          "name": "Chamber Choir (Selective)",
-          "short_name": "Chamb. Choir"
-        },
-        {
-          "time": "16:00-17:00",
-          "name": "Creative Art Club",
-          "short_name": "Art"
+          "name": "Technical Drawing (Selective)",
+          "short_name": "Tech Draw"
         }
-      ]
+      ],
+      "pack_display": "",
+      "clubs_display": [
+        {
+          "start": "12:45",
+          "name": "Tech Draw"
+        }
+      ],
+      "snack_display": "",
+      "snack_line": "",
+      "drop_display": "08:15",
+      "pick_display": "16:00"
     }
   }
 }
