@@ -29,6 +29,7 @@
         }
       ],
       "pack_display": "Violin",
+      "pack_line": "Pack: Violin",
       "clubs_display": [
         {
           "start": "07:45",
@@ -39,8 +40,8 @@
           "name": "Typing"
         }
       ],
-      "snack_display": "",
-      "snack_line": "",
+      "snack_display": "-",
+      "snack_line": "-",
       "drop_display": "07:45",
       "pick_display": "15:45"
     },
@@ -61,14 +62,19 @@
         }
       ],
       "pack_display": "",
+      "pack_line": "-",
       "clubs_display": [
         {
           "start": "12:45",
           "name": "Tech Draw"
+        },
+        {
+          "start": "-",
+          "name": "-"
         }
       ],
-      "snack_display": "",
-      "snack_line": "",
+      "snack_display": "-",
+      "snack_line": "-",
       "drop_display": "08:15",
       "pick_display": "16:00"
     }

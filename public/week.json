@@ -42,6 +42,7 @@
             }
           ],
           "pack_display": "Water bottle, Sports kit",
+          "pack_line": "Pack: Water bottle, Sports kit",
           "clubs_display": [
             {
               "start": "08:00",
@@ -93,6 +94,7 @@
             }
           ],
           "pack_display": "Water bottle, Sports kit",
+          "pack_line": "Pack: Water bottle, Sports kit",
           "clubs_display": [
             {
               "start": "08:00",
@@ -145,6 +147,7 @@
             }
           ],
           "pack_display": "Uniform",
+          "pack_line": "Pack: Uniform",
           "clubs_display": [
             {
               "start": "07:30",
@@ -187,6 +190,7 @@
             }
           ],
           "pack_display": "",
+          "pack_line": "-",
           "clubs_display": [
             {
               "start": "08:00",
@@ -239,6 +243,7 @@
             }
           ],
           "pack_display": "Violin",
+          "pack_line": "Pack: Violin",
           "clubs_display": [
             {
               "start": "07:45",
@@ -249,8 +254,8 @@
               "name": "Typing"
             }
           ],
-          "snack_display": "",
-          "snack_line": "",
+          "snack_display": "-",
+          "snack_line": "-",
           "drop_display": "07:45",
           "pick_display": "15:45"
         },
@@ -271,14 +276,19 @@
             }
           ],
           "pack_display": "",
+          "pack_line": "-",
           "clubs_display": [
             {
               "start": "12:45",
               "name": "Tech Draw"
+            },
+            {
+              "start": "-",
+              "name": "-"
             }
           ],
-          "snack_display": "",
-          "snack_line": "",
+          "snack_display": "-",
+          "snack_line": "-",
           "drop_display": "08:15",
           "pick_display": "16:00"
         }
@@ -314,14 +324,19 @@
             }
           ],
           "pack_display": "Uniform, Swim kit (goggles, hat, swimsuit, towel)",
+          "pack_line": "Pack: Uniform, Swim kit (goggles, hat, swimsuit, towel)",
           "clubs_display": [
             {
               "start": "07:45",
               "name": "Fencing"
+            },
+            {
+              "start": "-",
+              "name": "-"
             }
           ],
-          "snack_display": "",
-          "snack_line": "",
+          "snack_display": "-",
+          "snack_line": "-",
           "drop_display": "07:45",
           "pick_display": "15:45"
         },
@@ -352,6 +367,7 @@
             }
           ],
           "pack_display": "Swim kit (goggles, hat, swimsuit, towel)",
+          "pack_line": "Pack: Swim kit (goggles, hat, swimsuit, towel)",
           "clubs_display": [
             {
               "start": "08:00",
@@ -362,8 +378,8 @@
               "name": "Creat. Comp."
             }
           ],
-          "snack_display": "",
-          "snack_line": "",
+          "snack_display": "-",
+          "snack_line": "-",
           "drop_display": "08:15",
           "pick_display": "16:00"
         }
@@ -384,9 +400,19 @@
           "pickup": "15:45",
           "clubs": [],
           "pack_display": "",
-          "clubs_display": [],
-          "snack_display": "",
-          "snack_line": "",
+          "pack_line": "-",
+          "clubs_display": [
+            {
+              "start": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "name": "-"
+            }
+          ],
+          "snack_display": "-",
+          "snack_line": "-",
           "drop_display": "08:15",
           "pick_display": "15:45"
         },
@@ -401,9 +427,19 @@
           "pickup": "16:00",
           "clubs": [],
           "pack_display": "",
-          "clubs_display": [],
-          "snack_display": "",
-          "snack_line": "",
+          "pack_line": "-",
+          "clubs_display": [
+            {
+              "start": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "name": "-"
+            }
+          ],
+          "snack_display": "-",
+          "snack_line": "-",
           "drop_display": "08:15",
           "pick_display": "16:00"
         }
