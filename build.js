@@ -101,12 +101,16 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
     const clothingLabel = clothingLabels[clothingCode] || clothingCode || '';
 
     const packCodes = (dayRules.pack && dayRules.pack[kidId]) || [];
+    const snacks = !!(dayRules.snacks && dayRules.snacks[kidId]);
+    if (snacks) {
+      packCodes.push('snack');
+      packLabels.snack = 'Snack';
+    }
     const pack = packCodes.map(code => ({
       code,
       label: packLabels[code] || code
     }));
 
-    const snacks = !!(dayRules.snacks && dayRules.snacks[kidId]);
     const dropoff = dayRules.dropoff?.[kidId];
     const pickup = dayRules.pickup?.[kidId];
 
@@ -123,13 +127,19 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
       const parts = String(range).split('-');
       return (parts[0] || '').trim();
     };
+    const endTime = (range) => {
+      if (!range) return '';
+      const parts = String(range).split('-');
+      return (parts[1] || '').trim();
+    };
 
     const clubs_display = clubsForChild.map(c => ({
       start: startTime(c.time),
+      end: endTime(c.time),
       name: c.short_name
     }));
     while (clubs_display.length < 2) {
-      clubs_display.push({ start: '-', name: '-' });
+      clubs_display.push({ start: '-', end: '-', name: '-' });
     }
 
     const pack_labels = pack.map(p => p.label);
@@ -154,7 +164,8 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
       snack_display: snacks ? 'Yes' : '-',
       snack_line: snacks ? 'Snack: Yes' : '-',
       drop_display: dropoff || '',
-      pick_display: pickup || ''
+      pick_display: pickup || '',
+      after_sch_display: [{ start: '-', end: '-', name: '-' }]
     };
   }
 
