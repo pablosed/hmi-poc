@@ -1,43 +1,92 @@
 {
-  "day": "Friday",
-  "date": "2025-12-19",
+  "day": "Saturday",
+  "date": "2025-12-20",
   "children": {
     "C1": {
       "clothing": {
         "code": "uniform",
         "label": "Uniform"
       },
-      "pack": [],
-      "snacks": false,
-      "dropoff": "08:15",
-      "pickup": "15:45",
-      "clubs": [],
-      "pack_display": "",
-      "pack_line": "-",
-      "pack_items": [
-        "",
-        "",
-        ""
-      ],
-      "pack_item1": "",
-      "pack_item2": "",
-      "pack_item3": "",
-      "clubs_display": [
+      "pack": [
         {
-          "start": "-",
-          "end": "-",
-          "name": "-"
+          "code": "long1",
+          "label": "Library books, extra shoes, lunchbox"
         },
         {
-          "start": "-",
-          "end": "-",
-          "name": "-"
+          "code": "long2",
+          "label": "PE kit (trainers, shorts, shirt, towel)"
+        },
+        {
+          "code": "long3",
+          "label": "Water bottle, sunscreen, cap"
+        },
+        {
+          "code": "snack",
+          "label": "Snack"
         }
       ],
-      "snack_display": "-",
-      "snack_line": "-",
-      "drop_display": "08:15",
-      "pick_display": "15:45",
+      "snacks": true,
+      "dropoff": "07:45",
+      "pickup": "17:30",
+      "clubs": [
+        {
+          "time": "07:30-08:30",
+          "name": "Morning Club (Test)",
+          "short_name": "Morning Club (Test)"
+        },
+        {
+          "time": "12:15-13:00",
+          "name": "Lunch Activity (Test)",
+          "short_name": "Lunch Activity (Test)"
+        },
+        {
+          "time": "15:00-16:00",
+          "name": "Afternoon Club (Test)",
+          "short_name": "Afternoon Club (Test)"
+        },
+        {
+          "time": "17:30-18:30",
+          "name": "After School Activity (Test)",
+          "short_name": "After School Activity (Test)"
+        }
+      ],
+      "pack_display": "Library books, extra shoes, lunchbox, PE kit (trainers, shorts, shirt, towel), Water bottle, sunscreen, cap, Snack",
+      "pack_line": "Library books, extra shoes, lunchbox, PE kit (trainers, shorts, shirt, towel), Water bottle, sunscreen, cap, Snack",
+      "pack_items": [
+        "Library books, extra shoes, lunchbox",
+        "PE kit (trainers, shorts, shirt, towel)",
+        "Water bottle, sunscreen, cap",
+        "Snack"
+      ],
+      "pack_item1": "Library books, extra shoes, lunchbox",
+      "pack_item2": "PE kit (trainers, shorts, shirt, towel)",
+      "pack_item3": "Water bottle, sunscreen, cap",
+      "clubs_display": [
+        {
+          "start": "07:30",
+          "end": "08:30",
+          "name": "Morning Club (Test)"
+        },
+        {
+          "start": "12:15",
+          "end": "13:00",
+          "name": "Lunch Activity (Test)"
+        },
+        {
+          "start": "15:00",
+          "end": "16:00",
+          "name": "Afternoon Club (Test)"
+        },
+        {
+          "start": "17:30",
+          "end": "18:30",
+          "name": "After School Activity (Test)"
+        }
+      ],
+      "snack_display": "Yes",
+      "snack_line": "Snack: Yes",
+      "drop_display": "07:45",
+      "pick_display": "17:30",
       "after_sch_display": [
         {
           "start": "-",
@@ -51,37 +100,86 @@
         "code": "uniform",
         "label": "Uniform"
       },
-      "pack": [],
-      "snacks": false,
-      "dropoff": "08:15",
-      "pickup": "16:00",
-      "clubs": [],
-      "pack_display": "",
-      "pack_line": "-",
-      "pack_items": [
-        "",
-        "",
-        ""
-      ],
-      "pack_item1": "",
-      "pack_item2": "",
-      "pack_item3": "",
-      "clubs_display": [
+      "pack": [
         {
-          "start": "-",
-          "end": "-",
-          "name": "-"
+          "code": "long1",
+          "label": "Library books, extra shoes, lunchbox"
         },
         {
-          "start": "-",
-          "end": "-",
-          "name": "-"
+          "code": "long2",
+          "label": "PE kit (trainers, shorts, shirt, towel)"
+        },
+        {
+          "code": "long3",
+          "label": "Water bottle, sunscreen, cap"
+        },
+        {
+          "code": "snack",
+          "label": "Snack"
         }
       ],
-      "snack_display": "-",
-      "snack_line": "-",
-      "drop_display": "08:15",
-      "pick_display": "16:00",
+      "snacks": true,
+      "dropoff": "07:45",
+      "pickup": "17:30",
+      "clubs": [
+        {
+          "time": "07:30-08:30",
+          "name": "Morning Club (Test)",
+          "short_name": "Morning Club (Test)"
+        },
+        {
+          "time": "12:15-13:00",
+          "name": "Lunch Activity (Test)",
+          "short_name": "Lunch Activity (Test)"
+        },
+        {
+          "time": "15:00-16:00",
+          "name": "Afternoon Club (Test)",
+          "short_name": "Afternoon Club (Test)"
+        },
+        {
+          "time": "17:30-18:30",
+          "name": "After School Activity (Test)",
+          "short_name": "After School Activity (Test)"
+        }
+      ],
+      "pack_display": "Library books, extra shoes, lunchbox, PE kit (trainers, shorts, shirt, towel), Water bottle, sunscreen, cap, Snack",
+      "pack_line": "Library books, extra shoes, lunchbox, PE kit (trainers, shorts, shirt, towel), Water bottle, sunscreen, cap, Snack",
+      "pack_items": [
+        "Library books, extra shoes, lunchbox",
+        "PE kit (trainers, shorts, shirt, towel)",
+        "Water bottle, sunscreen, cap",
+        "Snack"
+      ],
+      "pack_item1": "Library books, extra shoes, lunchbox",
+      "pack_item2": "PE kit (trainers, shorts, shirt, towel)",
+      "pack_item3": "Water bottle, sunscreen, cap",
+      "clubs_display": [
+        {
+          "start": "07:30",
+          "end": "08:30",
+          "name": "Morning Club (Test)"
+        },
+        {
+          "start": "12:15",
+          "end": "13:00",
+          "name": "Lunch Activity (Test)"
+        },
+        {
+          "start": "15:00",
+          "end": "16:00",
+          "name": "Afternoon Club (Test)"
+        },
+        {
+          "start": "17:30",
+          "end": "18:30",
+          "name": "After School Activity (Test)"
+        }
+      ],
+      "snack_display": "Yes",
+      "snack_line": "Snack: Yes",
+      "drop_display": "07:45",
+      "pick_display": "17:30",
       "after_sch_display": [
         {
           "start": "-",

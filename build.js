@@ -13,6 +13,33 @@ const OUTPUT_DIR = path.join(__dirname, 'public');
 const OUTPUT_TODAY = path.join(OUTPUT_DIR, 'today.json');
 const OUTPUT_WEEK = path.join(OUTPUT_DIR, 'week.json');
 
+const defaultClothingLabels = { uniform: 'Uniform', test_wear: 'Test Wear' };
+const defaultPackLabels = {
+  long1: 'Library books, extra shoes, lunchbox',
+  long2: 'PE kit (trainers, shorts, shirt, towel)',
+  long3: 'Water bottle, sunscreen, cap',
+  snack: 'Snack'
+};
+
+function fallbackDayRules() {
+  return {
+    clothing: { C1: 'uniform', C2: 'uniform' },
+    pack: {
+      C1: ['long1', 'long2', 'long3'],
+      C2: ['long1', 'long2', 'long3']
+    },
+    snacks: { C1: true, C2: true },
+    dropoff: { C1: '07:45', C2: '07:45' },
+    pickup: { C1: '17:30', C2: '17:30' },
+    _clubs: [
+      { time: '07:30-08:30', participants: ['C1', 'C2'], club: 'Morning Club (Test)' },
+      { time: '12:15-13:00', participants: ['C1', 'C2'], club: 'Lunch Activity (Test)' },
+      { time: '15:00-16:00', participants: ['C1', 'C2'], club: 'Afternoon Club (Test)' },
+      { time: '17:30-18:30', participants: ['C1', 'C2'], club: 'After School Activity (Test)' }
+    ]
+  };
+}
+
 function readJsonSafe(file) {
   try {
     return JSON.parse(fs.readFileSync(file, 'utf8'));
@@ -86,12 +113,11 @@ function deepMerge(target, source) {
 }
 
 function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
-  const dayRules = dayConfig.days?.[dayName];
-  if (!dayRules) throw new Error(`No day_config for ${dayName}`);
+  const dayRules = dayConfig.days?.[dayName] || fallbackDayRules();
 
   const clubsToday = (clubSchedule.clubs && clubSchedule.clubs[dayName]) || [];
-  const clothingLabels = dayConfig.meta?.clothing_labels || {};
-  const packLabels = dayConfig.meta?.pack_labels || {};
+  const clothingLabels = { ...defaultClothingLabels, ...(dayConfig.meta?.clothing_labels || {}) };
+  const packLabels = { ...defaultPackLabels, ...(dayConfig.meta?.pack_labels || {}) };
 
   const kids = Object.keys(dayRules.clothing || {});
   const children = {};
@@ -114,7 +140,8 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
     const dropoff = dayRules.dropoff?.[kidId];
     const pickup = dayRules.pickup?.[kidId];
 
-    const clubsForChild = clubsToday
+    const clubsSource = clubsToday.length ? clubsToday : (dayRules._clubs || []);
+    const clubsForChild = clubsSource
       .filter(entry => Array.isArray(entry.participants) && entry.participants.includes(kidId))
       .map(entry => ({
         time: entry.time,
@@ -138,7 +165,7 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
       end: endTime(c.time),
       name: c.short_name
     }));
-    while (clubs_display.length < 2) {
+    while (clubs_display.length < 4) {
       clubs_display.push({ start: '-', end: '-', name: '-' });
     }
 

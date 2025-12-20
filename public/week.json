@@ -65,6 +65,16 @@
               "start": "16:00",
               "end": "17:00",
               "name": "Netball"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
             }
           ],
           "snack_display": "Yes",
@@ -143,6 +153,11 @@
               "start": "16:00",
               "end": "17:00",
               "name": "Netball"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
             }
           ],
           "snack_display": "Yes",
@@ -213,6 +228,16 @@
               "start": "16:00",
               "end": "17:00",
               "name": "Art"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
             }
           ],
           "snack_display": "Yes",
@@ -283,6 +308,11 @@
               "start": "16:00",
               "end": "17:00",
               "name": "Art"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
             }
           ],
           "snack_display": "Yes",
@@ -349,6 +379,16 @@
               "start": "12:30",
               "end": "13:15",
               "name": "Typing"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
             }
           ],
           "snack_display": "-",
@@ -394,6 +434,16 @@
               "start": "12:45",
               "end": "13:15",
               "name": "Technical Drawing"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
               "start": "-",
@@ -464,6 +514,16 @@
               "start": "-",
               "end": "-",
               "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
             }
           ],
           "snack_display": "-",
@@ -524,6 +584,16 @@
               "start": "12:45",
               "end": "13:15",
               "name": "Creat. Comp."
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
             }
           ],
           "snack_display": "-",
@@ -574,6 +644,16 @@
               "start": "-",
               "end": "-",
               "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
             }
           ],
           "snack_display": "-",
@@ -609,6 +689,16 @@
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
             {
               "start": "-",
               "end": "-",
