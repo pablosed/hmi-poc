@@ -10,61 +10,36 @@
     "Monday": {
       "day": "Monday",
       "date": "2025-12-15",
+      "date_number": "15",
+      "date_suffix": "th",
+      "date_month": "Dec",
       "children": {
         "C1": {
           "clothing": {
-            "code": "uniform",
-            "label": "Uniform"
+            "label": ""
           },
-          "pack": [
-            {
-              "code": "water_bottle",
-              "label": "Water bottle"
-            },
-            {
-              "code": "sports_kit",
-              "label": "Sports kit"
-            },
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
-          "snacks": true,
-          "dropoff": "08:15",
-          "pickup": "17:00",
-          "clubs": [
-            {
-              "time": "08:00-08:30",
-              "name": "KS2 Choir",
-              "short_name": "Choir"
-            },
-            {
-              "time": "16:00-17:00",
-              "name": "Netball",
-              "short_name": "Netball"
-            }
-          ],
-          "pack_display": "Water bottle, Sports kit, Snack",
-          "pack_line": "Water bottle, Sports kit, Snack",
+          "pack": [],
+          "clubs": [],
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Water bottle",
-            "Sports kit",
-            "Snack"
+            "",
+            "",
+            ""
           ],
-          "pack_item1": "Water bottle",
-          "pack_item2": "Sports kit",
-          "pack_item3": "Snack",
+          "pack_item1": "",
+          "pack_item2": "",
+          "pack_item3": "",
           "clubs_display": [
             {
-              "start": "08:00",
-              "end": "08:30",
-              "name": "Choir"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
-              "start": "16:00",
-              "end": "17:00",
-              "name": "Netball"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
               "start": "-",
@@ -77,82 +52,40 @@
               "name": "-"
             }
           ],
-          "snack_display": "Yes",
-          "snack_line": "Snack: Yes",
-          "drop_display": "08:15",
-          "pick_display": "17:00",
-          "after_sch_display": [
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ]
+          "drop_display": "",
+          "pick_display": ""
         },
         "C2": {
           "clothing": {
-            "code": "uniform",
-            "label": "Uniform"
+            "label": ""
           },
-          "pack": [
-            {
-              "code": "water_bottle",
-              "label": "Water bottle"
-            },
-            {
-              "code": "sports_kit",
-              "label": "Sports kit"
-            },
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
-          "snacks": true,
-          "dropoff": "08:15",
-          "pickup": "17:00",
-          "clubs": [
-            {
-              "time": "08:00-08:30",
-              "name": "KS2 Choir",
-              "short_name": "Choir"
-            },
-            {
-              "time": "12:45-13:15",
-              "name": "Dodgeball",
-              "short_name": "Dodgeball"
-            },
-            {
-              "time": "16:00-17:00",
-              "name": "Netball",
-              "short_name": "Netball"
-            }
-          ],
-          "pack_display": "Water bottle, Sports kit, Snack",
-          "pack_line": "Water bottle, Sports kit, Snack",
+          "pack": [],
+          "clubs": [],
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Water bottle",
-            "Sports kit",
-            "Snack"
+            "",
+            "",
+            ""
           ],
-          "pack_item1": "Water bottle",
-          "pack_item2": "Sports kit",
-          "pack_item3": "Snack",
+          "pack_item1": "",
+          "pack_item2": "",
+          "pack_item3": "",
           "clubs_display": [
             {
-              "start": "08:00",
-              "end": "08:30",
-              "name": "Choir"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
-              "start": "12:45",
-              "end": "13:15",
-              "name": "Dodgeball"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
-              "start": "16:00",
-              "end": "17:00",
-              "name": "Netball"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
               "start": "-",
@@ -160,154 +93,49 @@
               "name": "-"
             }
           ],
-          "snack_display": "Yes",
-          "snack_line": "Snack: Yes",
-          "drop_display": "08:15",
-          "pick_display": "17:00",
-          "after_sch_display": [
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ]
+          "drop_display": "",
+          "pick_display": ""
         }
       }
     },
     "Tuesday": {
       "day": "Tuesday",
       "date": "2025-12-16",
+      "date_number": "16",
+      "date_suffix": "th",
+      "date_month": "Dec",
       "children": {
         "C1": {
           "clothing": {
-            "code": "football_kit",
-            "label": "Football kit"
+            "label": ""
           },
-          "pack": [
-            {
-              "code": "uniform",
-              "label": "Uniform"
-            },
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
-          "snacks": true,
-          "dropoff": "07:30",
-          "pickup": "17:00",
-          "clubs": [
-            {
-              "time": "07:30-08:30",
-              "name": "Girls Football (Westway)",
-              "short_name": "Football"
-            },
-            {
-              "time": "16:00-17:00",
-              "name": "Creative Art Club",
-              "short_name": "Art"
-            }
-          ],
-          "pack_display": "Uniform, Snack",
-          "pack_line": "Uniform, Snack",
+          "pack": [],
+          "clubs": [],
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Uniform",
-            "Snack",
-            ""
-          ],
-          "pack_item1": "Uniform",
-          "pack_item2": "Snack",
-          "pack_item3": "",
-          "clubs_display": [
-            {
-              "start": "07:30",
-              "end": "08:30",
-              "name": "Football"
-            },
-            {
-              "start": "16:00",
-              "end": "17:00",
-              "name": "Art"
-            },
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            },
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ],
-          "snack_display": "Yes",
-          "snack_line": "Snack: Yes",
-          "drop_display": "07:30",
-          "pick_display": "17:00",
-          "after_sch_display": [
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ]
-        },
-        "C2": {
-          "clothing": {
-            "code": "uniform",
-            "label": "Uniform"
-          },
-          "pack": [
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
-          "snacks": true,
-          "dropoff": "08:15",
-          "pickup": "17:00",
-          "clubs": [
-            {
-              "time": "08:00-08:30",
-              "name": "Morning Drawing Club",
-              "short_name": "Draw"
-            },
-            {
-              "time": "12:45-13:15",
-              "name": "Chamber Choir",
-              "short_name": "Chamber Choir"
-            },
-            {
-              "time": "16:00-17:00",
-              "name": "Creative Art Club",
-              "short_name": "Art"
-            }
-          ],
-          "pack_display": "Snack",
-          "pack_line": "Snack",
-          "pack_items": [
-            "Snack",
+            "",
             "",
             ""
           ],
-          "pack_item1": "Snack",
+          "pack_item1": "",
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
             {
-              "start": "08:00",
-              "end": "08:30",
-              "name": "Draw"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
-              "start": "12:45",
-              "end": "13:15",
-              "name": "Chamber Choir"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
-              "start": "16:00",
-              "end": "17:00",
-              "name": "Art"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
               "start": "-",
@@ -315,110 +143,65 @@
               "name": "-"
             }
           ],
-          "snack_display": "Yes",
-          "snack_line": "Snack: Yes",
-          "drop_display": "08:15",
-          "pick_display": "17:00",
-          "after_sch_display": [
+          "drop_display": "",
+          "pick_display": ""
+        },
+        "C2": {
+          "clothing": {
+            "label": ""
+          },
+          "pack": [],
+          "clubs": [],
+          "pack_display": "",
+          "pack_line": "-",
+          "pack_items": [
+            "",
+            "",
+            ""
+          ],
+          "pack_item1": "",
+          "pack_item2": "",
+          "pack_item3": "",
+          "clubs_display": [
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
             {
               "start": "-",
               "end": "-",
               "name": "-"
             }
-          ]
+          ],
+          "drop_display": "",
+          "pick_display": ""
         }
       }
     },
     "Wednesday": {
       "day": "Wednesday",
       "date": "2025-12-17",
+      "date_number": "17",
+      "date_suffix": "th",
+      "date_month": "Dec",
       "children": {
         "C1": {
           "clothing": {
-            "code": "uniform",
-            "label": "Uniform"
-          },
-          "pack": [
-            {
-              "code": "violin",
-              "label": "Violin"
-            }
-          ],
-          "snacks": false,
-          "dropoff": "07:45",
-          "pickup": "15:45",
-          "clubs": [
-            {
-              "time": "07:45-08:30",
-              "name": "Orchestra",
-              "short_name": "Orchestra"
-            },
-            {
-              "time": "12:30-13:15",
-              "name": "Touch-Typing",
-              "short_name": "Typing"
-            }
-          ],
-          "pack_display": "Violin",
-          "pack_line": "Violin",
-          "pack_items": [
-            "Violin",
-            "",
-            ""
-          ],
-          "pack_item1": "Violin",
-          "pack_item2": "",
-          "pack_item3": "",
-          "clubs_display": [
-            {
-              "start": "07:45",
-              "end": "08:30",
-              "name": "Orchestra"
-            },
-            {
-              "start": "12:30",
-              "end": "13:15",
-              "name": "Typing"
-            },
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            },
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ],
-          "snack_display": "-",
-          "snack_line": "-",
-          "drop_display": "07:45",
-          "pick_display": "15:45",
-          "after_sch_display": [
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ]
-        },
-        "C2": {
-          "clothing": {
-            "code": "uniform",
-            "label": "Uniform"
+            "label": ""
           },
           "pack": [],
-          "snacks": false,
-          "dropoff": "08:15",
-          "pickup": "16:00",
-          "clubs": [
-            {
-              "time": "12:45-13:15",
-              "name": "Technical Drawing",
-              "short_name": "Technical Drawing"
-            }
-          ],
+          "clubs": [],
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
@@ -431,9 +214,9 @@
           "pack_item3": "",
           "clubs_display": [
             {
-              "start": "12:45",
-              "end": "13:15",
-              "name": "Technical Drawing"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
               "start": "-",
@@ -451,139 +234,85 @@
               "name": "-"
             }
           ],
-          "snack_display": "-",
-          "snack_line": "-",
-          "drop_display": "08:15",
-          "pick_display": "16:00",
-          "after_sch_display": [
+          "drop_display": "",
+          "pick_display": ""
+        },
+        "C2": {
+          "clothing": {
+            "label": ""
+          },
+          "pack": [],
+          "clubs": [],
+          "pack_display": "",
+          "pack_line": "-",
+          "pack_items": [
+            "",
+            "",
+            ""
+          ],
+          "pack_item1": "",
+          "pack_item2": "",
+          "pack_item3": "",
+          "clubs_display": [
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
             {
               "start": "-",
               "end": "-",
               "name": "-"
             }
-          ]
+          ],
+          "drop_display": "",
+          "pick_display": ""
         }
       }
     },
     "Thursday": {
       "day": "Thursday",
       "date": "2025-12-18",
+      "date_number": "18",
+      "date_suffix": "th",
+      "date_month": "Dec",
       "children": {
         "C1": {
           "clothing": {
-            "code": "sports_kit",
-            "label": "Sports kit"
+            "label": ""
           },
-          "pack": [
-            {
-              "code": "uniform",
-              "label": "Uniform"
-            },
-            {
-              "code": "swim_kit",
-              "label": "Swim kit (goggles, hat, swimsuit, towel)"
-            }
-          ],
-          "snacks": false,
-          "dropoff": "07:45",
-          "pickup": "15:45",
-          "clubs": [
-            {
-              "time": "07:45-08:30",
-              "name": "Fencing",
-              "short_name": "Fencing"
-            }
-          ],
-          "pack_display": "Uniform, Swim kit (goggles, hat, swimsuit, towel)",
-          "pack_line": "Uniform, Swim kit (goggles, hat, swimsuit, towel)",
+          "pack": [],
+          "clubs": [],
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Uniform",
-            "Swim kit (goggles, hat, swimsuit, towel)",
-            ""
-          ],
-          "pack_item1": "Uniform",
-          "pack_item2": "Swim kit (goggles, hat, swimsuit, towel)",
-          "pack_item3": "",
-          "clubs_display": [
-            {
-              "start": "07:45",
-              "end": "08:30",
-              "name": "Fencing"
-            },
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            },
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            },
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ],
-          "snack_display": "-",
-          "snack_line": "-",
-          "drop_display": "07:45",
-          "pick_display": "15:45",
-          "after_sch_display": [
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ]
-        },
-        "C2": {
-          "clothing": {
-            "code": "uniform",
-            "label": "Uniform"
-          },
-          "pack": [
-            {
-              "code": "swim_kit",
-              "label": "Swim kit (goggles, hat, swimsuit, towel)"
-            }
-          ],
-          "snacks": false,
-          "dropoff": "08:15",
-          "pickup": "16:00",
-          "clubs": [
-            {
-              "time": "08:00-08:30",
-              "name": "Advanced Musicianship",
-              "short_name": "Advanced Musicianship"
-            },
-            {
-              "time": "12:45-13:15",
-              "name": "Creative Competitors",
-              "short_name": "Creat. Comp."
-            }
-          ],
-          "pack_display": "Swim kit (goggles, hat, swimsuit, towel)",
-          "pack_line": "Swim kit (goggles, hat, swimsuit, towel)",
-          "pack_items": [
-            "Swim kit (goggles, hat, swimsuit, towel)",
+            "",
             "",
             ""
           ],
-          "pack_item1": "Swim kit (goggles, hat, swimsuit, towel)",
+          "pack_item1": "",
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
             {
-              "start": "08:00",
-              "end": "08:30",
-              "name": "Advanced Musicianship"
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
-              "start": "12:45",
-              "end": "13:15",
-              "name": "Creat. Comp."
+              "start": "-",
+              "end": "-",
+              "name": "-"
             },
             {
               "start": "-",
@@ -596,33 +325,64 @@
               "name": "-"
             }
           ],
-          "snack_display": "-",
-          "snack_line": "-",
-          "drop_display": "08:15",
-          "pick_display": "16:00",
-          "after_sch_display": [
+          "drop_display": "",
+          "pick_display": ""
+        },
+        "C2": {
+          "clothing": {
+            "label": ""
+          },
+          "pack": [],
+          "clubs": [],
+          "pack_display": "",
+          "pack_line": "-",
+          "pack_items": [
+            "",
+            "",
+            ""
+          ],
+          "pack_item1": "",
+          "pack_item2": "",
+          "pack_item3": "",
+          "clubs_display": [
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
+            {
+              "start": "-",
+              "end": "-",
+              "name": "-"
+            },
             {
               "start": "-",
               "end": "-",
               "name": "-"
             }
-          ]
+          ],
+          "drop_display": "",
+          "pick_display": ""
         }
       }
     },
     "Friday": {
       "day": "Friday",
       "date": "2025-12-19",
+      "date_number": "19",
+      "date_suffix": "th",
+      "date_month": "Dec",
       "children": {
         "C1": {
           "clothing": {
-            "code": "uniform",
-            "label": "Uniform"
+            "label": ""
           },
           "pack": [],
-          "snacks": false,
-          "dropoff": "08:15",
-          "pickup": "15:45",
           "clubs": [],
           "pack_display": "",
           "pack_line": "-",
@@ -656,27 +416,14 @@
               "name": "-"
             }
           ],
-          "snack_display": "-",
-          "snack_line": "-",
-          "drop_display": "08:15",
-          "pick_display": "15:45",
-          "after_sch_display": [
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ]
+          "drop_display": "",
+          "pick_display": ""
         },
         "C2": {
           "clothing": {
-            "code": "uniform",
-            "label": "Uniform"
+            "label": ""
           },
           "pack": [],
-          "snacks": false,
-          "dropoff": "08:15",
-          "pickup": "16:00",
           "clubs": [],
           "pack_display": "",
           "pack_line": "-",
@@ -710,17 +457,8 @@
               "name": "-"
             }
           ],
-          "snack_display": "-",
-          "snack_line": "-",
-          "drop_display": "08:15",
-          "pick_display": "16:00",
-          "after_sch_display": [
-            {
-              "start": "-",
-              "end": "-",
-              "name": "-"
-            }
-          ]
+          "drop_display": "",
+          "pick_display": ""
         }
       }
     }

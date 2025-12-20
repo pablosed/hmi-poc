@@ -1,0 +1,24 @@
+{
+  "pack": {
+    "Monday": {
+      "C1": ["water_bottle", "sports_kit"],
+      "C2": ["water_bottle", "sports_kit"]
+    },
+    "Tuesday": {
+      "C1": ["uniform"],
+      "C2": []
+    },
+    "Wednesday": {
+      "C1": ["violin"],
+      "C2": []
+    },
+    "Thursday": {
+      "C1": ["uniform", "swim_kit"],
+      "C2": ["swim_kit"]
+    },
+    "Friday": {
+      "C1": [],
+      "C2": []
+    }
+  }
+}

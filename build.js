@@ -8,11 +8,15 @@ const path = require('path');
 
 const INPUT_DAY_CONFIG = path.join(__dirname, 'day_config.json');
 const INPUT_CLUBS = path.join(__dirname, 'club_schedule.json');
+const INPUT_PACK = path.join(__dirname, 'pack_schedule.json');
 const INPUT_OVERRIDES = path.join(__dirname, 'overrides.json');
 const OUTPUT_DIR = path.join(__dirname, 'public');
 const OUTPUT_TODAY = path.join(OUTPUT_DIR, 'today.json');
 const OUTPUT_WEEK = path.join(OUTPUT_DIR, 'week.json');
 
+// Anonymized IDs; keep real names only in the HMI canvas, not in JSON.
+const idToName = { C1: 'Kid1', C2: 'Kid2' };
+const nameToId = Object.fromEntries(Object.entries(idToName).map(([id, name]) => [name, id]));
 const defaultClothingLabels = { uniform: 'Uniform', test_wear: 'Test Wear' };
 const defaultPackLabels = {
   long1: 'Library books, extra shoes, lunchbox',
@@ -21,23 +25,22 @@ const defaultPackLabels = {
   snack: 'Snack'
 };
 
-function fallbackDayRules() {
-  return {
-    clothing: { C1: 'uniform', C2: 'uniform' },
-    pack: {
-      C1: ['long1', 'long2', 'long3'],
-      C2: ['long1', 'long2', 'long3']
-    },
-    snacks: { C1: true, C2: true },
-    dropoff: { C1: '07:45', C2: '07:45' },
-    pickup: { C1: '17:30', C2: '17:30' },
-    _clubs: [
-      { time: '07:30-08:30', participants: ['C1', 'C2'], club: 'Morning Club (Test)' },
-      { time: '12:15-13:00', participants: ['C1', 'C2'], club: 'Lunch Activity (Test)' },
-      { time: '15:00-16:00', participants: ['C1', 'C2'], club: 'Afternoon Club (Test)' },
-      { time: '17:30-18:30', participants: ['C1', 'C2'], club: 'After School Activity (Test)' }
-    ]
-  };
+function fallbackDayRules(dayName) {
+  const rules = { clothing: {}, pack: {}, dropoff: {}, pickup: {} };
+  for (const kidName of Object.values(idToName)) {
+    rules.clothing[kidName] = 'uniform';
+    rules.pack[kidName] = ['long1', 'long2', 'long3'];
+    rules.dropoff[kidName] = '07:45';
+    rules.pickup[kidName] = '17:30';
+  }
+  // Provide some clubs including an after-school slot
+  rules._clubs = [
+    { time: '07:30-08:30', participants: Object.values(idToName), club: 'Morning Club (Test Long Name)' },
+    { time: '12:15-13:00', participants: Object.values(idToName), club: 'Lunch Activity (Test Long Name)' },
+    { time: '15:00-16:00', participants: Object.values(idToName), club: 'Afternoon Club (Test Long Name)' },
+    { time: '17:30-18:30', participants: Object.values(idToName), club: 'After School Activity (Test Long Name)' }
+  ];
+  return rules;
 }
 
 function readJsonSafe(file) {
@@ -68,6 +71,21 @@ function isoDate(d) {
   return new Date(d - tzOffset).toISOString().slice(0, 10);
 }
 
+function ordinalSuffix(n) {
+  const v = n % 100;
+  if (v >= 11 && v <= 13) return 'th';
+  switch (n % 10) {
+    case 1: return 'st';
+    case 2: return 'nd';
+    case 3: return 'rd';
+    default: return 'th';
+  }
+}
+
+function monthShort(d) {
+  return d.toLocaleDateString('en-US', { month: 'short' });
+}
+
 function dayNameOf(d) {
   return d.toLocaleDateString('en-US', { weekday: 'long' });
 }
@@ -82,21 +100,8 @@ function startOfWeekMonday(d) {
 }
 
 function shortNameForClub(fullName) {
-  const map = {
-    'KS2 Choir': 'Choir',
-    'Girls Football (Westway)': 'Football',
-    'Morning Drawing Club': 'Draw',
-    'Chamber Choir (Selective)': 'Chamb. Choir',
-    'Creative Art Club': 'Art',
-    'Orchestra (Selective)': 'Orch.',
-    'Touch-Typing': 'Typing',
-    'Technical Drawing (Selective)': 'Tech Draw',
-    'Fencing': 'Fencing',
-    'Advanced Musicianship (Selective)': 'Adv. Mus.',
-    'Creative Competitors': 'Creat. Comp.',
-    'Dodgeball': 'Dodgeball'
-  };
-  return map[fullName] || fullName;
+  // Keep full names on screen; no further abbreviation.
+  return fullName;
 }
 
 function deepMerge(target, source) {
@@ -112,37 +117,40 @@ function deepMerge(target, source) {
   return output;
 }
 
-function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
-  const dayRules = dayConfig.days?.[dayName] || fallbackDayRules();
+function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule) {
+  const dayRules = dayConfig.days?.[dayName];
+  // If no config for this day (e.g., weekend), fall back to synthetic data for testing.
 
   const clubsToday = (clubSchedule.clubs && clubSchedule.clubs[dayName]) || [];
   const clothingLabels = { ...defaultClothingLabels, ...(dayConfig.meta?.clothing_labels || {}) };
   const packLabels = { ...defaultPackLabels, ...(dayConfig.meta?.pack_labels || {}) };
+  const packByDay = packSchedule.pack?.[dayName] || {};
 
-  const kids = Object.keys(dayRules.clothing || {});
+  const kids = Object.values(idToName);
   const children = {};
 
-  for (const kidId of kids) {
-    const clothingCode = dayRules.clothing?.[kidId];
+  const effectiveDayRules = dayRules || fallbackDayRules(dayName);
+
+  for (const kidName of kids) {
+    const kidId = nameToId[kidName];
+    const clothingCode = effectiveDayRules.clothing?.[kidName];
     const clothingLabel = clothingLabels[clothingCode] || clothingCode || '';
 
-    const packCodes = (dayRules.pack && dayRules.pack[kidId]) || [];
-    const snacks = !!(dayRules.snacks && dayRules.snacks[kidId]);
-    if (snacks) {
-      packCodes.push('snack');
-      packLabels.snack = 'Snack';
-    }
+    const packCodes =
+      (packByDay && packByDay[kidName]) ||
+      (effectiveDayRules.pack && effectiveDayRules.pack[kidName]) ||
+      [];
     const pack = packCodes.map(code => ({
       code,
       label: packLabels[code] || code
     }));
 
-    const dropoff = dayRules.dropoff?.[kidId];
-    const pickup = dayRules.pickup?.[kidId];
+    const dropoff = effectiveDayRules.dropoff?.[kidName];
+    const pickup = effectiveDayRules.pickup?.[kidName];
 
-    const clubsSource = clubsToday.length ? clubsToday : (dayRules._clubs || []);
+    const clubsSource = clubsToday.length ? clubsToday : (effectiveDayRules._clubs || []);
     const clubsForChild = clubsSource
-      .filter(entry => Array.isArray(entry.participants) && entry.participants.includes(kidId))
+      .filter(entry => Array.isArray(entry.participants) && entry.participants.includes(kidName))
       .map(entry => ({
         time: entry.time,
         name: entry.club,
@@ -178,6 +186,16 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
     }
     clubs_display.forEach(c => delete c.sortNum);
 
+    // Add snack automatically for afternoon clubs (start between 15:00 and 17:00).
+    const hasAfternoonClub = clubs_display.some(c => {
+      const mins = toSortNum(c.start);
+      return mins >= 900 && mins < 1020; // 15:00–16:59
+    });
+    if (hasAfternoonClub && !packCodes.includes('snack')) {
+      packCodes.push('snack');
+      if (!packLabels.snack) packLabels.snack = 'Snack';
+    }
+
     const pack_labels = pack.map(p => p.label);
     const pack_display = pack_labels.join(', ');
     const pack_items = [...pack_labels];
@@ -186,7 +204,6 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
     children[kidId] = {
       clothing: { code: clothingCode, label: clothingLabel },
       pack,
-      snacks,
       dropoff,
       pickup,
       clubs: clubsForChild,
@@ -197,18 +214,25 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
       pack_item2: pack_items[1],
       pack_item3: pack_items[2],
       clubs_display,
-      snack_display: snacks ? 'Yes' : '-',
-      snack_line: snacks ? 'Snack: Yes' : '-',
       drop_display: dropoff || '',
-      pick_display: pickup || '',
-      after_sch_display: [{ start: '-', end: '-', name: '-' }]
+      pick_display: pickup || ''
     };
   }
 
-  return { day: dayName, date: isoDateString, children };
+  const dateObj = new Date(isoDateString);
+  const dayNum = dateObj.getDate();
+
+  return {
+    day: dayName,
+    date: isoDateString,
+    date_number: String(dayNum),
+    date_suffix: ordinalSuffix(dayNum),
+    date_month: monthShort(dateObj),
+    children
+  };
 }
 
-function buildWeek(mondayDate, dayConfig, clubSchedule) {
+function buildWeek(mondayDate, dayConfig, clubSchedule, packSchedule) {
   const week = {};
   for (let i = 0; i < 7; i++) {
     const d = new Date(mondayDate);
@@ -216,7 +240,7 @@ function buildWeek(mondayDate, dayConfig, clubSchedule) {
     const dayName = dayNameOf(d);
     if (!dayConfig.days?.[dayName]) continue; // skip days not in config
     const iso = isoDate(d);
-    week[dayName] = buildDay(dayName, iso, dayConfig, clubSchedule);
+    week[dayName] = buildDay(dayName, iso, dayConfig, clubSchedule, packSchedule);
   }
   return { week_order: Object.keys(week), week };
 }
@@ -228,18 +252,19 @@ function applyOverrides(base, overrides) {
 function main() {
   const dayConfig = readJsonSafe(INPUT_DAY_CONFIG);
   const clubSchedule = readJsonSafe(INPUT_CLUBS);
+  const packSchedule = readJsonSafe(INPUT_PACK);
   const overridesAll = readJsonSafe(INPUT_OVERRIDES);
 
   const targetDate = getTargetDate();
   const todayIso = isoDate(targetDate);
   const todayName = dayNameOf(targetDate);
 
-  const todayBase = buildDay(todayName, todayIso, dayConfig, clubSchedule);
+  const todayBase = buildDay(todayName, todayIso, dayConfig, clubSchedule, packSchedule);
   const todayOverrides = overridesAll.by_date?.[todayIso];
   const today = applyOverrides(todayBase, todayOverrides);
 
   const monday = startOfWeekMonday(targetDate);
-  const weekBase = buildWeek(monday, dayConfig, clubSchedule);
+  const weekBase = buildWeek(monday, dayConfig, clubSchedule, packSchedule);
   const weekWithOverrides = { week_order: weekBase.week_order, week: {} };
   for (const [dayName, dayData] of Object.entries(weekBase.week)) {
     const overridesForDay = overridesAll.by_date?.[dayData.date];
@@ -251,6 +276,7 @@ function main() {
   fs.writeFileSync(OUTPUT_WEEK, JSON.stringify(weekWithOverrides, null, 2));
 
   console.log(`Wrote ${OUTPUT_TODAY} and ${OUTPUT_WEEK}`);
+  console.log('Kids mapping (not included in JSON):', idToName);
 }
 
 main();
