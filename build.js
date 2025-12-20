@@ -159,15 +159,24 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule) {
       const parts = String(range).split('-');
       return (parts[1] || '').trim();
     };
+    const toSortNum = (t) => {
+      const [h, m] = (t || '00:00').split(':').map(x => parseInt(x, 10) || 0);
+      return h * 60 + m;
+    };
 
-    const clubs_display = clubsForChild.map(c => ({
-      start: startTime(c.time),
-      end: endTime(c.time),
-      name: c.short_name
-    }));
+    const clubs_display = clubsForChild
+      .map(c => ({
+        start: startTime(c.time),
+        end: endTime(c.time),
+        name: c.short_name,
+        sortNum: toSortNum(startTime(c.time))
+      }))
+      .sort((a, b) => a.sortNum - b.sortNum)
+      .slice(0, 4);
     while (clubs_display.length < 4) {
-      clubs_display.push({ start: '-', end: '-', name: '-' });
+      clubs_display.push({ start: '-', end: '-', name: '-', sortNum: 0 });
     }
+    clubs_display.forEach(c => delete c.sortNum);
 
     const pack_labels = pack.map(p => p.label);
     const pack_display = pack_labels.join(', ');
