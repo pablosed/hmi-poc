@@ -13,15 +13,15 @@
       "pack": [
         {
           "code": "long1",
-          "label": "Library books, extra shoes, lunchbox"
+          "label": "Library books."
         },
         {
           "code": "long2",
-          "label": "PE kit (trainers, shorts, shirt, towel)"
+          "label": "Sports kit bag"
         },
         {
           "code": "long3",
-          "label": "Water bottle, sunscreen, cap"
+          "label": "Water bottle"
         }
       ],
       "dropoff": "07:45",
@@ -48,16 +48,16 @@
           "short_name": "After School Activity (Test Long Name)"
         }
       ],
-      "pack_display": "Library books, extra shoes, lunchbox, PE kit (trainers, shorts, shirt, towel), Water bottle, sunscreen, cap",
-      "pack_line": "Library books, extra shoes, lunchbox, PE kit (trainers, shorts, shirt, towel), Water bottle, sunscreen, cap",
+      "pack_display": "Library books., Sports kit bag, Water bottle",
+      "pack_line": "Library books., Sports kit bag, Water bottle",
       "pack_items": [
-        "Library books, extra shoes, lunchbox",
-        "PE kit (trainers, shorts, shirt, towel)",
-        "Water bottle, sunscreen, cap"
+        "Library books.",
+        "Sports kit bag",
+        "Water bottle"
       ],
-      "pack_item1": "Library books, extra shoes, lunchbox",
-      "pack_item2": "PE kit (trainers, shorts, shirt, towel)",
-      "pack_item3": "Water bottle, sunscreen, cap",
+      "pack_item1": "Library books.",
+      "pack_item2": "Sports kit bag",
+      "pack_item3": "Water bottle",
       "clubs_display": [
         {
           "start": "07:30",
@@ -91,15 +91,15 @@
       "pack": [
         {
           "code": "long1",
-          "label": "Library books, extra shoes, lunchbox"
+          "label": "Library books."
         },
         {
           "code": "long2",
-          "label": "PE kit (trainers, shorts, shirt, towel)"
+          "label": "Sports kit bag"
         },
         {
           "code": "long3",
-          "label": "Water bottle, sunscreen, cap"
+          "label": "Water bottle"
         }
       ],
       "dropoff": "07:45",
@@ -126,16 +126,16 @@
           "short_name": "After School Activity (Test Long Name)"
         }
       ],
-      "pack_display": "Library books, extra shoes, lunchbox, PE kit (trainers, shorts, shirt, towel), Water bottle, sunscreen, cap",
-      "pack_line": "Library books, extra shoes, lunchbox, PE kit (trainers, shorts, shirt, towel), Water bottle, sunscreen, cap",
+      "pack_display": "Library books., Sports kit bag, Water bottle",
+      "pack_line": "Library books., Sports kit bag, Water bottle",
       "pack_items": [
-        "Library books, extra shoes, lunchbox",
-        "PE kit (trainers, shorts, shirt, towel)",
-        "Water bottle, sunscreen, cap"
+        "Library books.",
+        "Sports kit bag",
+        "Water bottle"
       ],
-      "pack_item1": "Library books, extra shoes, lunchbox",
-      "pack_item2": "PE kit (trainers, shorts, shirt, towel)",
-      "pack_item3": "Water bottle, sunscreen, cap",
+      "pack_item1": "Library books.",
+      "pack_item2": "Sports kit bag",
+      "pack_item3": "Water bottle",
       "clubs_display": [
         {
           "start": "07:30",

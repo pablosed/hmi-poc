@@ -19,9 +19,9 @@ const idToName = { C1: 'C1', C2: 'C2' };
 const nameToId = Object.fromEntries(Object.entries(idToName).map(([id, name]) => [name, id]));
 const defaultClothingLabels = { uniform: 'Uniform', test_wear: 'Test Wear' };
 const defaultPackLabels = {
-  long1: 'Library books, extra shoes, lunchbox',
-  long2: 'PE kit (trainers, shorts, shirt, towel)',
-  long3: 'Water bottle, sunscreen, cap',
+  long1: 'Library books.',
+  long2: 'Sports kit bag',
+  long3: 'Water bottle',
   snack: 'Snack'
 };
 
