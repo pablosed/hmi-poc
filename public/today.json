@@ -7,8 +7,8 @@
   "children": {
     "C1": {
       "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
+        "code": "sportskit",
+        "label": "Sports Kit"
       },
       "pack": [
         {
