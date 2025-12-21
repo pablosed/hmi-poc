@@ -1,25 +1,106 @@
 {
   "clubs": {
     "Monday": [
-      { "time": "08:00-08:30", "participants": ["C1", "C2"], "club": "KS2 Choir" },
-      { "time": "12:45-13:15", "participants": ["C2"], "club": "Dodgeball" },
-      { "time": "16:00-17:00", "participants": ["C1", "C2"], "club": "Netball" }
+      {
+        "time": "08:00-08:30",
+        "participants": [
+          "C1",
+          "C2"
+        ],
+        "club": "KS2 Choir"
+      },
+      {
+        "time": "12:45-13:15",
+        "participants": [
+          "C2"
+        ],
+        "club": "Dodgeball"
+      },
+      {
+        "time": "16:00-17:00",
+        "participants": [
+          "C1",
+          "C2"
+        ],
+        "club": "Netball"
+      }
     ],
     "Tuesday": [
-      { "time": "07:30-08:30", "participants": ["C1"], "club": "Girls Football (Westway)" },
-      { "time": "08:00-08:30", "participants": ["C2"], "club": "Morning Drawing Club" },
-      { "time": "12:45-13:15", "participants": ["C2"], "club": "Chamber Choir (Selective)" },
-      { "time": "16:00-17:00", "participants": ["C1", "C2"], "club": "Creative Art Club" }
+      {
+        "time": "07:30-08:30",
+        "participants": [
+          "C1"
+        ],
+        "club": "Girls Football (Westway)"
+      },
+      {
+        "time": "08:00-08:30",
+        "participants": [
+          "C2"
+        ],
+        "club": "Morning Drawing Club"
+      },
+      {
+        "time": "12:45-13:15",
+        "participants": [
+          "C2"
+        ],
+        "club": "Chamber Choir (Selective)"
+      },
+      {
+        "time": "16:00-17:00",
+        "participants": [
+          "C1",
+          "C2"
+        ],
+        "club": "Creative Art Club"
+      }
     ],
     "Wednesday": [
-      { "time": "07:45-08:30", "participants": ["C1"], "club": "Orchestra (Selective)" },
-      { "time": "12:30-13:15", "participants": ["C1"], "club": "Touch-Typing" },
-      { "time": "12:45-13:15", "participants": ["C2"], "club": "Technical Drawing (Selective)" }
+      {
+        "time": "07:45-08:30",
+        "participants": [
+          "C1"
+        ],
+        "club": "Orchestra (Selective)"
+      },
+      {
+        "time": "12:30-13:15",
+        "participants": [
+          "C1"
+        ],
+        "club": "Touch-Typing"
+      },
+      {
+        "time": "12:45-13:15",
+        "participants": [
+          "C2"
+        ],
+        "club": "Technical Drawing (Selective)"
+      }
     ],
     "Thursday": [
-      { "time": "07:45-08:30", "participants": ["C1"], "club": "Fencing" },
-      { "time": "08:00-08:30", "participants": ["C2"], "club": "Advanced Musicianship (Selective)" },
-      { "time": "12:45-13:15", "participants": ["C2"], "club": "Creative Competitors" }
+      {
+        "time": "07:45-08:30",
+        "participants": [
+          "C1"
+        ],
+        "club": "Fencing"
+      },
+      {
+        "time": "08:00-08:30",
+        "participants": [
+          "C2"
+        ],
+        "club": "Advanced Musicianship (Selective)"
+      },
+      {
+        "time": "12:45-13:15",
+        "participants": [
+          "C2"
+        ],
+        "club": "Creative Competitors"
+      }
     ]
   }
 }

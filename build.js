@@ -15,7 +15,7 @@ const OUTPUT_TODAY = path.join(OUTPUT_DIR, 'today.json');
 const OUTPUT_WEEK = path.join(OUTPUT_DIR, 'week.json');
 
 // Anonymized IDs; keep real names only in the HMI canvas, not in JSON.
-const idToName = { C1: 'Kid1', C2: 'Kid2' };
+const idToName = { C1: 'C1', C2: 'C2' };
 const nameToId = Object.fromEntries(Object.entries(idToName).map(([id, name]) => [name, id]));
 const defaultClothingLabels = { uniform: 'Uniform', test_wear: 'Test Wear' };
 const defaultPackLabels = {

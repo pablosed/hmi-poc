@@ -1,39 +1,129 @@
 {
   "days": {
     "Monday": {
-      "clothing": { "C1": "uniform", "C2": "uniform" },
-      "pack": { "C1": ["water_bottle", "sports_kit"], "C2": ["water_bottle", "sports_kit"] },
-      "snacks": { "C1": true, "C2": true },
-      "dropoff": { "C1": "08:15", "C2": "08:15" },
-      "pickup": { "C1": "17:00", "C2": "17:00" }
+      "clothing": {
+        "C1": "uniform",
+        "C2": "uniform"
+      },
+      "pack": {
+        "C1": [
+          "water_bottle",
+          "sports_kit"
+        ],
+        "C2": [
+          "water_bottle",
+          "sports_kit"
+        ]
+      },
+      "snacks": {
+        "C1": true,
+        "C2": true
+      },
+      "dropoff": {
+        "C1": "08:15",
+        "C2": "08:15"
+      },
+      "pickup": {
+        "C1": "17:00",
+        "C2": "17:00"
+      }
     },
     "Tuesday": {
-      "clothing": { "C1": "football_kit", "C2": "uniform" },
-      "pack": { "C1": ["uniform"], "C2": [] },
-      "snacks": { "C1": true, "C2": true },
-      "dropoff": { "C1": "07:30", "C2": "08:15" },
-      "pickup": { "C1": "17:00", "C2": "17:00" }
+      "clothing": {
+        "C1": "football_kit",
+        "C2": "uniform"
+      },
+      "pack": {
+        "C1": [
+          "uniform"
+        ],
+        "C2": []
+      },
+      "snacks": {
+        "C1": true,
+        "C2": true
+      },
+      "dropoff": {
+        "C1": "07:30",
+        "C2": "08:15"
+      },
+      "pickup": {
+        "C1": "17:00",
+        "C2": "17:00"
+      }
     },
     "Wednesday": {
-      "clothing": { "C1": "uniform", "C2": "uniform" },
-      "pack": { "C1": ["violin"], "C2": [] },
-      "snacks": { "C1": false, "C2": false },
-      "dropoff": { "C1": "07:45", "C2": "08:15" },
-      "pickup": { "C1": "15:45", "C2": "16:00" }
+      "clothing": {
+        "C1": "uniform",
+        "C2": "uniform"
+      },
+      "pack": {
+        "C1": [
+          "violin"
+        ],
+        "C2": []
+      },
+      "snacks": {
+        "C1": false,
+        "C2": false
+      },
+      "dropoff": {
+        "C1": "07:45",
+        "C2": "08:15"
+      },
+      "pickup": {
+        "C1": "15:45",
+        "C2": "16:00"
+      }
     },
     "Thursday": {
-      "clothing": { "C1": "sports_kit", "C2": "uniform" },
-      "pack": { "C1": ["uniform", "swim_kit"], "C2": ["swim_kit"] },
-      "snacks": { "C1": false, "C2": false },
-      "dropoff": { "C1": "07:45", "C2": "08:15" },
-      "pickup": { "C1": "15:45", "C2": "16:00" }
+      "clothing": {
+        "C1": "sports_kit",
+        "C2": "uniform"
+      },
+      "pack": {
+        "C1": [
+          "uniform",
+          "swim_kit"
+        ],
+        "C2": [
+          "swim_kit"
+        ]
+      },
+      "snacks": {
+        "C1": false,
+        "C2": false
+      },
+      "dropoff": {
+        "C1": "07:45",
+        "C2": "08:15"
+      },
+      "pickup": {
+        "C1": "15:45",
+        "C2": "16:00"
+      }
     },
     "Friday": {
-      "clothing": { "C1": "uniform", "C2": "uniform" },
-      "pack": { "C1": [], "C2": [] },
-      "snacks": { "C1": false, "C2": false },
-      "dropoff": { "C1": "08:15", "C2": "08:15" },
-      "pickup": { "C1": "15:45", "C2": "16:00" }
+      "clothing": {
+        "C1": "uniform",
+        "C2": "uniform"
+      },
+      "pack": {
+        "C1": [],
+        "C2": []
+      },
+      "snacks": {
+        "C1": false,
+        "C2": false
+      },
+      "dropoff": {
+        "C1": "08:15",
+        "C2": "08:15"
+      },
+      "pickup": {
+        "C1": "15:45",
+        "C2": "16:00"
+      }
     }
   },
   "meta": {
