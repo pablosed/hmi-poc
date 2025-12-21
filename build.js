@@ -27,8 +27,9 @@ const defaultPackLabels = {
 
 function fallbackDayRules(dayName) {
   const rules = { clothing: {}, pack: {}, dropoff: {}, pickup: {} };
+  const dummyClothing = { C1: 'sports_kit', C2: 'uniform' };
   for (const kidName of Object.values(idToName)) {
-    rules.clothing[kidName] = 'uniform';
+    rules.clothing[kidName] = dummyClothing[kidName] || 'uniform';
     rules.pack[kidName] = ['long1', 'long2', 'long3'];
     rules.dropoff[kidName] = '07:45';
     rules.pickup[kidName] = '17:30';
