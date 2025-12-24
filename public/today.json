@@ -22,7 +22,7 @@
         {
           "time": "07:45-08:30",
           "name": "Orchestra",
-          "short_name": "Orch."
+          "short_name": "Orchestra"
         },
         {
           "time": "12:30-13:15",
@@ -44,7 +44,7 @@
         {
           "start": "07:45",
           "end": "08:30",
-          "name": "Orch."
+          "name": "Orchestra"
         },
         {
           "start": "12:30",

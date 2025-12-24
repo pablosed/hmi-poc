@@ -88,10 +88,10 @@ function shortNameForClub(fullName) {
   const map = {
     'KS2 Choir': 'Choir',
     'Girls Football (Westway)': 'Football',
-    'Morning Drawing Club': 'Draw',
+    'Morning Drawing Club': 'Drawing',
     'Chamber Choir': 'Chamb. Choir',
     'Creative Art Club': 'Art',
-    'Orchestra': 'Orch.',
+    'Orchestra': 'Orchestra',
     'Touch-Typing': 'Typing',
     'Technical Drawing': 'Tech. Drawing',
     'Fencing': 'Fencing',
