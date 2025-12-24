@@ -18,6 +18,10 @@
         {
           "code": "sports_kit",
           "label": "Sports kit"
+        },
+        {
+          "code": "snack",
+          "label": "Snack"
         }
       ],
       "dropoff": "08:15",
@@ -34,16 +38,16 @@
           "short_name": "Netball"
         }
       ],
-      "pack_display": "Water bottle, Sports kit",
-      "pack_line": "Water bottle, Sports kit",
+      "pack_display": "Water bottle, Sports kit, Snack",
+      "pack_line": "Water bottle, Sports kit, Snack",
       "pack_items": [
         "Water bottle",
         "Sports kit",
-        ""
+        "Snack"
       ],
       "pack_item1": "Water bottle",
       "pack_item2": "Sports kit",
-      "pack_item3": "",
+      "pack_item3": "Snack",
       "clubs_display": [
         {
           "start": "08:00",
@@ -82,6 +86,10 @@
         {
           "code": "sports_kit",
           "label": "Sports kit"
+        },
+        {
+          "code": "snack",
+          "label": "Snack"
         }
       ],
       "dropoff": "08:15",
@@ -103,16 +111,16 @@
           "short_name": "Netball"
         }
       ],
-      "pack_display": "Water bottle, Sports kit",
-      "pack_line": "Water bottle, Sports kit",
+      "pack_display": "Water bottle, Sports kit, Snack",
+      "pack_line": "Water bottle, Sports kit, Snack",
       "pack_items": [
         "Water bottle",
         "Sports kit",
-        ""
+        "Snack"
       ],
       "pack_item1": "Water bottle",
       "pack_item2": "Sports kit",
-      "pack_item3": "",
+      "pack_item3": "Snack",
       "clubs_display": [
         {
           "start": "08:00",

@@ -3,11 +3,13 @@
     "Monday": {
       "C1": [
         "water_bottle",
-        "sports_kit"
+        "sports_kit",
+        "snack"
       ],
       "C2": [
         "water_bottle",
-        "sports_kit"
+        "sports_kit",
+        "snack"
       ]
     },
     "Tuesday": {
