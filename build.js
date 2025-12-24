@@ -84,8 +84,23 @@ function startOfWeekMonday(d) {
 }
 
 function shortNameForClub(fullName) {
-  // Keep full names on screen; no further abbreviation.
-  return String(fullName).replace(/\s*\(selective\)\s*/i, '').trim();
+  const cleaned = String(fullName).replace(/\s*\(selective\)\s*/i, '').trim();
+  const map = {
+    'KS2 Choir': 'Choir',
+    'Girls Football (Westway)': 'Football',
+    'Morning Drawing Club': 'Draw',
+    'Chamber Choir': 'Chamb. Choir',
+    'Creative Art Club': 'Art',
+    'Orchestra': 'Orch.',
+    'Touch-Typing': 'Typing',
+    'Technical Drawing': 'Tech. Drawing',
+    'Fencing': 'Fencing',
+    'Advanced Musicianship': 'Adv. Music',
+    'Creative Competitors': 'Creative Comp.',
+    'Dodgeball': 'Dodgeball',
+    'Netball': 'Netball'
+  };
+  return map[cleaned] || cleaned;
 }
 
 function deepMerge(target, source) {

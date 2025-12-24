@@ -35,7 +35,7 @@
             {
               "time": "08:00-08:30",
               "name": "KS2 Choir",
-              "short_name": "KS2 Choir"
+              "short_name": "Choir"
             },
             {
               "time": "16:00-17:00",
@@ -57,7 +57,7 @@
             {
               "start": "08:00",
               "end": "08:30",
-              "name": "KS2 Choir"
+              "name": "Choir"
             },
             {
               "start": "-",
@@ -99,7 +99,7 @@
             {
               "time": "08:00-08:30",
               "name": "KS2 Choir",
-              "short_name": "KS2 Choir"
+              "short_name": "Choir"
             },
             {
               "time": "12:45-13:15",
@@ -126,7 +126,7 @@
             {
               "start": "08:00",
               "end": "08:30",
-              "name": "KS2 Choir"
+              "name": "Choir"
             },
             {
               "start": "12:45",
@@ -173,12 +173,12 @@
             {
               "time": "07:30-08:30",
               "name": "Girls Football (Westway)",
-              "short_name": "Girls Football (Westway)"
+              "short_name": "Football"
             },
             {
               "time": "16:00-17:00",
               "name": "Creative Art Club",
-              "short_name": "Creative Art Club"
+              "short_name": "Art"
             }
           ],
           "pack_display": "Uniform",
@@ -195,7 +195,7 @@
             {
               "start": "07:30",
               "end": "08:30",
-              "name": "Girls Football (Westway)"
+              "name": "Football"
             },
             {
               "start": "-",
@@ -205,7 +205,7 @@
             {
               "start": "16:00",
               "end": "17:00",
-              "name": "Creative Art Club"
+              "name": "Art"
             },
             {
               "start": "-",
@@ -228,17 +228,17 @@
             {
               "time": "08:00-08:30",
               "name": "Morning Drawing Club",
-              "short_name": "Morning Drawing Club"
+              "short_name": "Draw"
             },
             {
               "time": "12:45-13:15",
               "name": "Chamber Choir",
-              "short_name": "Chamber Choir"
+              "short_name": "Chamb. Choir"
             },
             {
               "time": "16:00-17:00",
               "name": "Creative Art Club",
-              "short_name": "Creative Art Club"
+              "short_name": "Art"
             }
           ],
           "pack_display": "",
@@ -255,17 +255,17 @@
             {
               "start": "08:00",
               "end": "08:30",
-              "name": "Morning Drawing Club"
+              "name": "Draw"
             },
             {
               "start": "12:45",
               "end": "13:15",
-              "name": "Chamber Choir"
+              "name": "Chamb. Choir"
             },
             {
               "start": "16:00",
               "end": "17:00",
-              "name": "Creative Art Club"
+              "name": "Art"
             },
             {
               "start": "-",
@@ -306,12 +306,12 @@
             {
               "time": "07:45-08:30",
               "name": "Orchestra",
-              "short_name": "Orchestra"
+              "short_name": "Orch."
             },
             {
               "time": "12:30-13:15",
               "name": "Touch-Typing",
-              "short_name": "Touch-Typing"
+              "short_name": "Typing"
             }
           ],
           "pack_display": "Violin, Snack",
@@ -328,12 +328,12 @@
             {
               "start": "07:45",
               "end": "08:30",
-              "name": "Orchestra"
+              "name": "Orch."
             },
             {
               "start": "12:30",
               "end": "13:15",
-              "name": "Touch-Typing"
+              "name": "Typing"
             },
             {
               "start": "15:45",
@@ -366,7 +366,7 @@
             {
               "time": "12:45-13:15",
               "name": "Technical Drawing",
-              "short_name": "Technical Drawing"
+              "short_name": "Tech. Drawing"
             }
           ],
           "pack_display": "Snack",
@@ -388,7 +388,7 @@
             {
               "start": "12:45",
               "end": "13:15",
-              "name": "Technical Drawing"
+              "name": "Tech. Drawing"
             },
             {
               "start": "16:00",
@@ -489,12 +489,12 @@
             {
               "time": "08:00-08:30",
               "name": "Advanced Musicianship",
-              "short_name": "Advanced Musicianship"
+              "short_name": "Adv. Music"
             },
             {
               "time": "12:45-13:15",
               "name": "Creative Competitors",
-              "short_name": "Creative Competitors"
+              "short_name": "Creative Comp."
             }
           ],
           "pack_display": "Swim kit (goggles, hat, swimsuit, towel)",
@@ -511,12 +511,12 @@
             {
               "start": "08:00",
               "end": "08:30",
-              "name": "Advanced Musicianship"
+              "name": "Adv. Music"
             },
             {
               "start": "12:45",
               "end": "13:15",
-              "name": "Creative Competitors"
+              "name": "Creative Comp."
             },
             {
               "start": "16:00",
