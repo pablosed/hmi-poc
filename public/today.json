@@ -21,8 +21,8 @@
       "clubs": [
         {
           "time": "07:45-08:30",
-          "name": "Orchestra (Selective)",
-          "short_name": "Orchestra (Selective)"
+          "name": "Orchestra",
+          "short_name": "Orchestra"
         },
         {
           "time": "12:30-13:15",
@@ -44,7 +44,7 @@
         {
           "start": "07:45",
           "end": "08:30",
-          "name": "Orchestra (Selective)"
+          "name": "Orchestra"
         },
         {
           "start": "12:30",
@@ -76,8 +76,8 @@
       "clubs": [
         {
           "time": "12:45-13:15",
-          "name": "Technical Drawing (Selective)",
-          "short_name": "Technical Drawing (Selective)"
+          "name": "Technical Drawing",
+          "short_name": "Technical Drawing"
         }
       ],
       "pack_display": "",
@@ -92,14 +92,14 @@
       "pack_item3": "",
       "clubs_display": [
         {
-          "start": "12:45",
-          "end": "13:15",
-          "name": "Technical Drawing (Selective)"
-        },
-        {
           "start": "-",
           "end": "-",
           "name": "-"
+        },
+        {
+          "start": "12:45",
+          "end": "13:15",
+          "name": "Technical Drawing"
         },
         {
           "start": "-",

@@ -24,25 +24,8 @@ const defaultPackLabels = {
   long3: 'Water bottle',
   snack: 'Snack'
 };
-
-function fallbackDayRules(dayName) {
-  const rules = { clothing: {}, pack: {}, dropoff: {}, pickup: {} };
-  const dummyClothing = { C1: 'sports_kit', C2: 'uniform' };
-  for (const kidName of Object.values(idToName)) {
-    rules.clothing[kidName] = dummyClothing[kidName] || 'uniform';
-    rules.pack[kidName] = ['long1', 'long2', 'long3'];
-    rules.dropoff[kidName] = '07:45';
-    rules.pickup[kidName] = '17:30';
-  }
-  // Provide some clubs including an after-school slot
-  rules._clubs = [
-    { time: '07:30-08:30', participants: Object.values(idToName), club: 'Morning Club (Test Long Name)' },
-    { time: '12:15-13:00', participants: Object.values(idToName), club: 'Lunch Activity (Test Long Name)' },
-    { time: '15:00-16:00', participants: Object.values(idToName), club: 'Afternoon Club (Test Long Name)' },
-    { time: '17:30-18:30', participants: Object.values(idToName), club: 'After School Activity (Test Long Name)' }
-  ];
-  return rules;
-}
+const defaultDropoff = { C1: '08:15', C2: '08:15' };
+const defaultPickup = { C1: '15:45', C2: '16:00' };
 
 function readJsonSafe(file) {
   try {
@@ -102,7 +85,7 @@ function startOfWeekMonday(d) {
 
 function shortNameForClub(fullName) {
   // Keep full names on screen; no further abbreviation.
-  return fullName;
+  return String(fullName).replace(/\s*\(selective\)\s*/i, '').trim();
 }
 
 function deepMerge(target, source) {
@@ -120,7 +103,6 @@ function deepMerge(target, source) {
 
 function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule) {
   const dayRules = dayConfig.days?.[dayName];
-  // If no config for this day (e.g., weekend), fall back to synthetic data for testing.
 
   const clubsToday = (clubSchedule.clubs && clubSchedule.clubs[dayName]) || [];
   const clothingLabels = { ...defaultClothingLabels, ...(dayConfig.meta?.clothing_labels || {}) };
@@ -130,7 +112,7 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
   const kids = Object.values(idToName);
   const children = {};
 
-  const effectiveDayRules = dayRules || fallbackDayRules(dayName);
+  const effectiveDayRules = dayRules || {};
 
   for (const kidName of kids) {
     const kidId = nameToId[kidName];
@@ -146,10 +128,10 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
       label: packLabels[code] || code
     }));
 
-    const dropoff = effectiveDayRules.dropoff?.[kidName];
-    const pickup = effectiveDayRules.pickup?.[kidName];
+    const dropoff = effectiveDayRules.dropoff?.[kidName] || defaultDropoff[kidId];
+    const pickup = effectiveDayRules.pickup?.[kidName] || defaultPickup[kidId];
 
-    const clubsSource = clubsToday.length ? clubsToday : (effectiveDayRules._clubs || []);
+    const clubsSource = clubsToday;
     const clubsForChild = clubsSource
       .filter(entry => Array.isArray(entry.participants) && entry.participants.includes(kidName))
       .map(entry => ({
@@ -173,19 +155,24 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
       return h * 60 + m;
     };
 
-    const clubs_display = clubsForChild
-      .map(c => ({
-        start: startTime(c.time),
-        end: endTime(c.time),
-        name: c.short_name,
-        sortNum: toSortNum(startTime(c.time))
-      }))
-      .sort((a, b) => a.sortNum - b.sortNum)
-      .slice(0, 4);
-    while (clubs_display.length < 4) {
-      clubs_display.push({ start: '-', end: '-', name: '-', sortNum: 0 });
+    const slotForStart = (start) => {
+      const mins = toSortNum(start);
+      if (mins < 660) return 0; // morning: before 11:00
+      if (mins < 840) return 1; // lunch: 11:00–13:59
+      if (mins < 1020) return 2; // afternoon: 14:00–16:59
+      return 3; // after school: 17:00+
+    };
+
+    const slots = [null, null, null, null];
+    for (const club of clubsForChild) {
+      const start = startTime(club.time);
+      const end = endTime(club.time);
+      const slot = slotForStart(start);
+      if (!slots[slot]) {
+        slots[slot] = { start, end, name: club.short_name };
+      }
     }
-    clubs_display.forEach(c => delete c.sortNum);
+    const clubs_display = slots.map(slot => slot || { start: '-', end: '-', name: '-' });
 
     // Add snack automatically for afternoon clubs (start between 15:00 and 17:00).
     const hasAfternoonClub = clubs_display.some(c => {
@@ -215,8 +202,8 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
       pack_item2: pack_items[1],
       pack_item3: pack_items[2],
       clubs_display,
-      drop_display: dropoff || '',
-      pick_display: pickup || ''
+      drop_display: dropoff,
+      pick_display: pickup
     };
   }
 
