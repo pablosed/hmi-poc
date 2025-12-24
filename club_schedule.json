@@ -54,6 +54,13 @@
           "C2"
         ],
         "club": "Creative Art Club"
+      },
+      {
+        "time": "17:45-18:45",
+        "participants": [
+          "C2"
+        ],
+        "club": "Ballet at St Marys"
       }
     ],
     "Wednesday": [
@@ -77,6 +84,20 @@
           "C2"
         ],
         "club": "Technical Drawing"
+      },
+      {
+        "time": "08:00-08:30",
+        "participants": [
+          "C2"
+        ],
+        "club": "Advanced Art"
+      },
+      {
+        "time": "17:30-18:30",
+        "participants": [
+          "C2"
+        ],
+        "club": "Tutoring with Julia"
       }
     ],
     "Thursday": [
@@ -100,6 +121,13 @@
           "C2"
         ],
         "club": "Creative Competitors"
+      },
+      {
+        "time": "16:30-17:30",
+        "participants": [
+          "C1"
+        ],
+        "club": "Violin with Ms Vican"
       }
     ]
   }

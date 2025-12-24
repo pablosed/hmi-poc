@@ -88,6 +88,11 @@
           "time": "16:00-17:00",
           "name": "Creative Art Club",
           "short_name": "Art"
+        },
+        {
+          "time": "17:45-18:45",
+          "name": "Ballet at St Marys",
+          "short_name": "Ballet at St Marys"
         }
       ],
       "pack_display": "",
@@ -117,9 +122,9 @@
           "name": "Art"
         },
         {
-          "start": "-",
-          "end": "-",
-          "name": "-"
+          "start": "17:45",
+          "end": "18:45",
+          "name": "Ballet at St Marys"
         }
       ],
       "drop_display": "08:15",
