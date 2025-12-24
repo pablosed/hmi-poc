@@ -307,6 +307,10 @@
             {
               "code": "violin",
               "label": "Violin"
+            },
+            {
+              "code": "snack",
+              "label": "Snack"
             }
           ],
           "dropoff": "07:45",
@@ -323,15 +327,15 @@
               "short_name": "Typing"
             }
           ],
-          "pack_display": "Violin",
-          "pack_line": "Violin",
+          "pack_display": "Violin, Snack",
+          "pack_line": "Violin, Snack",
           "pack_items": [
             "Violin",
-            "",
+            "Snack",
             ""
           ],
           "pack_item1": "Violin",
-          "pack_item2": "",
+          "pack_item2": "Snack",
           "pack_item3": "",
           "clubs_display": [
             {
@@ -363,7 +367,12 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [],
+          "pack": [
+            {
+              "code": "snack",
+              "label": "Snack"
+            }
+          ],
           "dropoff": "08:15",
           "pickup": "16:00",
           "clubs": [
@@ -383,14 +392,14 @@
               "short_name": "Tutor w/ Julia"
             }
           ],
-          "pack_display": "",
-          "pack_line": "-",
+          "pack_display": "Snack",
+          "pack_line": "Snack",
           "pack_items": [
-            "",
+            "Snack",
             "",
             ""
           ],
-          "pack_item1": "",
+          "pack_item1": "Snack",
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
@@ -565,23 +574,18 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
+          "pack": [],
           "dropoff": "08:15",
           "pickup": "15:45",
           "clubs": [],
-          "pack_display": "Snack",
-          "pack_line": "Snack",
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Snack",
+            "",
             "",
             ""
           ],
-          "pack_item1": "Snack",
+          "pack_item1": "",
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
@@ -614,23 +618,18 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
+          "pack": [],
           "dropoff": "08:15",
           "pickup": "16:00",
           "clubs": [],
-          "pack_display": "Snack",
-          "pack_line": "Snack",
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Snack",
+            "",
             "",
             ""
           ],
-          "pack_item1": "Snack",
+          "pack_item1": "",
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
