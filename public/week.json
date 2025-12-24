@@ -27,6 +27,10 @@
             {
               "code": "sports_kit",
               "label": "Sports kit"
+            },
+            {
+              "code": "snack",
+              "label": "Snack"
             }
           ],
           "dropoff": "08:15",
@@ -43,16 +47,16 @@
               "short_name": "Netball"
             }
           ],
-          "pack_display": "Water bottle, Sports kit",
-          "pack_line": "Water bottle, Sports kit",
+          "pack_display": "Water bottle, Sports kit, Snack",
+          "pack_line": "Water bottle, Sports kit, Snack",
           "pack_items": [
             "Water bottle",
             "Sports kit",
-            ""
+            "Snack"
           ],
           "pack_item1": "Water bottle",
           "pack_item2": "Sports kit",
-          "pack_item3": "",
+          "pack_item3": "Snack",
           "clubs_display": [
             {
               "start": "08:00",
@@ -91,6 +95,10 @@
             {
               "code": "sports_kit",
               "label": "Sports kit"
+            },
+            {
+              "code": "snack",
+              "label": "Snack"
             }
           ],
           "dropoff": "08:15",
@@ -112,16 +120,16 @@
               "short_name": "Netball"
             }
           ],
-          "pack_display": "Water bottle, Sports kit",
-          "pack_line": "Water bottle, Sports kit",
+          "pack_display": "Water bottle, Sports kit, Snack",
+          "pack_line": "Water bottle, Sports kit, Snack",
           "pack_items": [
             "Water bottle",
             "Sports kit",
-            ""
+            "Snack"
           ],
           "pack_item1": "Water bottle",
           "pack_item2": "Sports kit",
-          "pack_item3": "",
+          "pack_item3": "Snack",
           "clubs_display": [
             {
               "start": "08:00",
@@ -294,10 +302,6 @@
             {
               "code": "violin",
               "label": "Violin"
-            },
-            {
-              "code": "snack",
-              "label": "Snack"
             }
           ],
           "dropoff": "07:45",
@@ -314,15 +318,15 @@
               "short_name": "Typing"
             }
           ],
-          "pack_display": "Violin, Snack",
-          "pack_line": "Violin, Snack",
+          "pack_display": "Violin",
+          "pack_line": "Violin",
           "pack_items": [
             "Violin",
-            "Snack",
+            "",
             ""
           ],
           "pack_item1": "Violin",
-          "pack_item2": "Snack",
+          "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
             {
@@ -354,12 +358,7 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
+          "pack": [],
           "dropoff": "08:15",
           "pickup": "16:00",
           "clubs": [
@@ -369,14 +368,14 @@
               "short_name": "Tech. Drawing"
             }
           ],
-          "pack_display": "Snack",
-          "pack_line": "Snack",
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Snack",
+            "",
             "",
             ""
           ],
-          "pack_item1": "Snack",
+          "pack_item1": "",
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [

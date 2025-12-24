@@ -1,8 +1,8 @@
 {
-  "day": "Wednesday",
-  "date": "2025-12-24",
-  "date_number": "24",
-  "date_suffix": "th",
+  "day": "Monday",
+  "date": "2025-12-22",
+  "date_number": "22",
+  "date_suffix": "nd",
   "date_month": "Dec",
   "children": {
     "C1": {
@@ -12,99 +12,53 @@
       },
       "pack": [
         {
-          "code": "violin",
-          "label": "Violin"
-        }
-      ],
-      "dropoff": "07:45",
-      "pickup": "15:45",
-      "clubs": [
-        {
-          "time": "07:45-08:30",
-          "name": "Orchestra",
-          "short_name": "Orchestra"
+          "code": "water_bottle",
+          "label": "Water bottle"
         },
         {
-          "time": "12:30-13:15",
-          "name": "Touch-Typing",
-          "short_name": "Typing"
+          "code": "sports_kit",
+          "label": "Sports kit"
         }
       ],
-      "pack_display": "Violin",
-      "pack_line": "Violin",
+      "dropoff": "08:15",
+      "pickup": "17:00",
+      "clubs": [
+        {
+          "time": "08:00-08:30",
+          "name": "KS2 Choir",
+          "short_name": "Choir"
+        },
+        {
+          "time": "16:00-17:00",
+          "name": "Netball",
+          "short_name": "Netball"
+        }
+      ],
+      "pack_display": "Water bottle, Sports kit",
+      "pack_line": "Water bottle, Sports kit",
       "pack_items": [
-        "Violin",
-        "",
+        "Water bottle",
+        "Sports kit",
         ""
       ],
-      "pack_item1": "Violin",
-      "pack_item2": "",
+      "pack_item1": "Water bottle",
+      "pack_item2": "Sports kit",
       "pack_item3": "",
       "clubs_display": [
         {
-          "start": "07:45",
+          "start": "08:00",
           "end": "08:30",
-          "name": "Orchestra"
-        },
-        {
-          "start": "12:30",
-          "end": "13:15",
-          "name": "Typing"
-        },
-        {
-          "start": "15:45",
-          "end": "15:45",
-          "name": "-"
+          "name": "Choir"
         },
         {
           "start": "-",
           "end": "-",
           "name": "-"
-        }
-      ],
-      "drop_display": "07:45",
-      "pick_display": "15:45"
-    },
-    "C2": {
-      "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
-      },
-      "pack": [],
-      "dropoff": "08:15",
-      "pickup": "16:00",
-      "clubs": [
-        {
-          "time": "12:45-13:15",
-          "name": "Technical Drawing",
-          "short_name": "Tech. Drawing"
-        }
-      ],
-      "pack_display": "",
-      "pack_line": "-",
-      "pack_items": [
-        "",
-        "",
-        ""
-      ],
-      "pack_item1": "",
-      "pack_item2": "",
-      "pack_item3": "",
-      "clubs_display": [
-        {
-          "start": "08:15",
-          "end": "-",
-          "name": "-"
-        },
-        {
-          "start": "12:45",
-          "end": "13:15",
-          "name": "Tech. Drawing"
         },
         {
           "start": "16:00",
-          "end": "16:00",
-          "name": "-"
+          "end": "17:00",
+          "name": "Netball"
         },
         {
           "start": "-",
@@ -113,7 +67,76 @@
         }
       ],
       "drop_display": "08:15",
-      "pick_display": "16:00"
+      "pick_display": "17:00"
+    },
+    "C2": {
+      "clothing": {
+        "code": "uniform",
+        "label": "Uniform"
+      },
+      "pack": [
+        {
+          "code": "water_bottle",
+          "label": "Water bottle"
+        },
+        {
+          "code": "sports_kit",
+          "label": "Sports kit"
+        }
+      ],
+      "dropoff": "08:15",
+      "pickup": "17:00",
+      "clubs": [
+        {
+          "time": "08:00-08:30",
+          "name": "KS2 Choir",
+          "short_name": "Choir"
+        },
+        {
+          "time": "12:45-13:15",
+          "name": "Dodgeball",
+          "short_name": "Dodgeball"
+        },
+        {
+          "time": "16:00-17:00",
+          "name": "Netball",
+          "short_name": "Netball"
+        }
+      ],
+      "pack_display": "Water bottle, Sports kit",
+      "pack_line": "Water bottle, Sports kit",
+      "pack_items": [
+        "Water bottle",
+        "Sports kit",
+        ""
+      ],
+      "pack_item1": "Water bottle",
+      "pack_item2": "Sports kit",
+      "pack_item3": "",
+      "clubs_display": [
+        {
+          "start": "08:00",
+          "end": "08:30",
+          "name": "Choir"
+        },
+        {
+          "start": "12:45",
+          "end": "13:15",
+          "name": "Dodgeball"
+        },
+        {
+          "start": "16:00",
+          "end": "17:00",
+          "name": "Netball"
+        },
+        {
+          "start": "-",
+          "end": "-",
+          "name": "-"
+        }
+      ],
+      "drop_display": "08:15",
+      "pick_display": "17:00"
     }
   }
 }
