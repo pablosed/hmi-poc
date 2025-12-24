@@ -173,10 +173,6 @@
             {
               "code": "uniform",
               "label": "Uniform"
-            },
-            {
-              "code": "snack",
-              "label": "Snack"
             }
           ],
           "dropoff": "07:30",
@@ -193,15 +189,15 @@
               "short_name": "Art"
             }
           ],
-          "pack_display": "Uniform, Snack",
-          "pack_line": "Uniform, Snack",
+          "pack_display": "Uniform",
+          "pack_line": "Uniform",
           "pack_items": [
             "Uniform",
-            "Snack",
+            "",
             ""
           ],
           "pack_item1": "Uniform",
-          "pack_item2": "Snack",
+          "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
             {
@@ -233,12 +229,7 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
+          "pack": [],
           "dropoff": "08:15",
           "pickup": "17:00",
           "clubs": [
@@ -263,14 +254,14 @@
               "short_name": "Ballet"
             }
           ],
-          "pack_display": "Snack",
-          "pack_line": "Snack",
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Snack",
+            "",
             "",
             ""
           ],
-          "pack_item1": "Snack",
+          "pack_item1": "",
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
@@ -449,6 +440,10 @@
             {
               "code": "swim_kit",
               "label": "Swim kit (goggles, hat, swimsuit, towel)"
+            },
+            {
+              "code": "snack",
+              "label": "Snack"
             }
           ],
           "dropoff": "07:45",
@@ -465,16 +460,16 @@
               "short_name": "Violin"
             }
           ],
-          "pack_display": "Uniform, Swim kit (goggles, hat, swimsuit, towel)",
-          "pack_line": "Uniform, Swim kit (goggles, hat, swimsuit, towel)",
+          "pack_display": "Uniform, Swim kit (goggles, hat, swimsuit, towel), Snack",
+          "pack_line": "Uniform, Swim kit (goggles, hat, swimsuit, towel), Snack",
           "pack_items": [
             "Uniform",
             "Swim kit (goggles, hat, swimsuit, towel)",
-            ""
+            "Snack"
           ],
           "pack_item1": "Uniform",
           "pack_item2": "Swim kit (goggles, hat, swimsuit, towel)",
-          "pack_item3": "",
+          "pack_item3": "Snack",
           "clubs_display": [
             {
               "start": "07:45",
@@ -509,6 +504,10 @@
             {
               "code": "swim_kit",
               "label": "Swim kit (goggles, hat, swimsuit, towel)"
+            },
+            {
+              "code": "snack",
+              "label": "Snack"
             }
           ],
           "dropoff": "08:15",
@@ -525,15 +524,15 @@
               "short_name": "Creative Comp."
             }
           ],
-          "pack_display": "Swim kit (goggles, hat, swimsuit, towel)",
-          "pack_line": "Swim kit (goggles, hat, swimsuit, towel)",
+          "pack_display": "Swim kit (goggles, hat, swimsuit, towel), Snack",
+          "pack_line": "Swim kit (goggles, hat, swimsuit, towel), Snack",
           "pack_items": [
             "Swim kit (goggles, hat, swimsuit, towel)",
-            "",
+            "Snack",
             ""
           ],
           "pack_item1": "Swim kit (goggles, hat, swimsuit, towel)",
-          "pack_item2": "",
+          "pack_item2": "Snack",
           "pack_item3": "",
           "clubs_display": [
             {
