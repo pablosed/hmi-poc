@@ -1,165 +1,119 @@
 {
-  "day": "Sunday",
-  "date": "2025-12-21",
-  "date_number": "21",
-  "date_suffix": "st",
+  "day": "Wednesday",
+  "date": "2025-12-24",
+  "date_number": "24",
+  "date_suffix": "th",
   "date_month": "Dec",
   "children": {
     "C1": {
-      "clothing": {
-        "code": "sportskit",
-        "label": "Sports Kit"
-      },
-      "pack": [
-        {
-          "code": "long1",
-          "label": "Library books."
-        },
-        {
-          "code": "long2",
-          "label": "Sports kit bag"
-        },
-        {
-          "code": "long3",
-          "label": "Water bottle"
-        }
-      ],
-      "dropoff": "07:45",
-      "pickup": "17:30",
-      "clubs": [
-        {
-          "time": "07:30-08:30",
-          "name": "Morning Club (Test Long Name)",
-          "short_name": "Morning Club (Test Long Name)"
-        },
-        {
-          "time": "12:15-13:00",
-          "name": "Lunch Activity (Test Long Name)",
-          "short_name": "Lunch Activity (Test Long Name)"
-        },
-        {
-          "time": "15:00-16:00",
-          "name": "Afternoon Club (Test Long Name)",
-          "short_name": "Afternoon Club (Test Long Name)"
-        },
-        {
-          "time": "17:30-18:30",
-          "name": "After School Activity (Test Long Name)",
-          "short_name": "After School Activity (Test Long Name)"
-        }
-      ],
-      "pack_display": "Library books., Sports kit bag, Water bottle",
-      "pack_line": "Library books., Sports kit bag, Water bottle",
-      "pack_items": [
-        "Library books.",
-        "Sports kit bag",
-        "Water bottle"
-      ],
-      "pack_item1": "Library books.",
-      "pack_item2": "Sports kit bag",
-      "pack_item3": "Water bottle",
-      "clubs_display": [
-        {
-          "start": "07:30",
-          "end": "08:30",
-          "name": "Morning Club (Test Long Name)"
-        },
-        {
-          "start": "12:15",
-          "end": "13:00",
-          "name": "Lunch Activity (Test Long Name)"
-        },
-        {
-          "start": "15:00",
-          "end": "16:00",
-          "name": "Afternoon Club (Test Long Name)"
-        },
-        {
-          "start": "17:30",
-          "end": "18:30",
-          "name": "After School Activity (Test Long Name)"
-        }
-      ],
-      "drop_display": "07:45",
-      "pick_display": "17:30"
-    },
-    "C2": {
       "clothing": {
         "code": "uniform",
         "label": "Uniform"
       },
       "pack": [
         {
-          "code": "long1",
-          "label": "Library books."
-        },
-        {
-          "code": "long2",
-          "label": "Sports kit bag"
-        },
-        {
-          "code": "long3",
-          "label": "Water bottle"
+          "code": "violin",
+          "label": "Violin"
         }
       ],
       "dropoff": "07:45",
-      "pickup": "17:30",
+      "pickup": "15:45",
       "clubs": [
         {
-          "time": "07:30-08:30",
-          "name": "Morning Club (Test Long Name)",
-          "short_name": "Morning Club (Test Long Name)"
+          "time": "07:45-08:30",
+          "name": "Orchestra (Selective)",
+          "short_name": "Orchestra (Selective)"
         },
         {
-          "time": "12:15-13:00",
-          "name": "Lunch Activity (Test Long Name)",
-          "short_name": "Lunch Activity (Test Long Name)"
-        },
-        {
-          "time": "15:00-16:00",
-          "name": "Afternoon Club (Test Long Name)",
-          "short_name": "Afternoon Club (Test Long Name)"
-        },
-        {
-          "time": "17:30-18:30",
-          "name": "After School Activity (Test Long Name)",
-          "short_name": "After School Activity (Test Long Name)"
+          "time": "12:30-13:15",
+          "name": "Touch-Typing",
+          "short_name": "Touch-Typing"
         }
       ],
-      "pack_display": "Library books., Sports kit bag, Water bottle",
-      "pack_line": "Library books., Sports kit bag, Water bottle",
+      "pack_display": "Violin",
+      "pack_line": "Violin",
       "pack_items": [
-        "Library books.",
-        "Sports kit bag",
-        "Water bottle"
+        "Violin",
+        "",
+        ""
       ],
-      "pack_item1": "Library books.",
-      "pack_item2": "Sports kit bag",
-      "pack_item3": "Water bottle",
+      "pack_item1": "Violin",
+      "pack_item2": "",
+      "pack_item3": "",
       "clubs_display": [
         {
-          "start": "07:30",
+          "start": "07:45",
           "end": "08:30",
-          "name": "Morning Club (Test Long Name)"
+          "name": "Orchestra (Selective)"
         },
         {
-          "start": "12:15",
-          "end": "13:00",
-          "name": "Lunch Activity (Test Long Name)"
+          "start": "12:30",
+          "end": "13:15",
+          "name": "Touch-Typing"
         },
         {
-          "start": "15:00",
-          "end": "16:00",
-          "name": "Afternoon Club (Test Long Name)"
+          "start": "-",
+          "end": "-",
+          "name": "-"
         },
         {
-          "start": "17:30",
-          "end": "18:30",
-          "name": "After School Activity (Test Long Name)"
+          "start": "-",
+          "end": "-",
+          "name": "-"
         }
       ],
       "drop_display": "07:45",
-      "pick_display": "17:30"
+      "pick_display": "15:45"
+    },
+    "C2": {
+      "clothing": {
+        "code": "uniform",
+        "label": "Uniform"
+      },
+      "pack": [],
+      "dropoff": "08:15",
+      "pickup": "16:00",
+      "clubs": [
+        {
+          "time": "12:45-13:15",
+          "name": "Technical Drawing (Selective)",
+          "short_name": "Technical Drawing (Selective)"
+        }
+      ],
+      "pack_display": "",
+      "pack_line": "-",
+      "pack_items": [
+        "",
+        "",
+        ""
+      ],
+      "pack_item1": "",
+      "pack_item2": "",
+      "pack_item3": "",
+      "clubs_display": [
+        {
+          "start": "12:45",
+          "end": "13:15",
+          "name": "Technical Drawing (Selective)"
+        },
+        {
+          "start": "-",
+          "end": "-",
+          "name": "-"
+        },
+        {
+          "start": "-",
+          "end": "-",
+          "name": "-"
+        },
+        {
+          "start": "-",
+          "end": "-",
+          "name": "-"
+        }
+      ],
+      "drop_display": "08:15",
+      "pick_display": "16:00"
     }
   }
 }

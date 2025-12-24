@@ -9,9 +9,9 @@
   "week": {
     "Monday": {
       "day": "Monday",
-      "date": "2025-12-15",
-      "date_number": "15",
-      "date_suffix": "th",
+      "date": "2025-12-22",
+      "date_number": "22",
+      "date_suffix": "nd",
       "date_month": "Dec",
       "children": {
         "C1": {
@@ -151,9 +151,9 @@
     },
     "Tuesday": {
       "day": "Tuesday",
-      "date": "2025-12-16",
-      "date_number": "16",
-      "date_suffix": "th",
+      "date": "2025-12-23",
+      "date_number": "23",
+      "date_suffix": "rd",
       "date_month": "Dec",
       "children": {
         "C1": {
@@ -280,8 +280,8 @@
     },
     "Wednesday": {
       "day": "Wednesday",
-      "date": "2025-12-17",
-      "date_number": "17",
+      "date": "2025-12-24",
+      "date_number": "24",
       "date_suffix": "th",
       "date_month": "Dec",
       "children": {
@@ -399,8 +399,8 @@
     },
     "Thursday": {
       "day": "Thursday",
-      "date": "2025-12-18",
-      "date_number": "18",
+      "date": "2025-12-25",
+      "date_number": "25",
       "date_suffix": "th",
       "date_month": "Dec",
       "children": {
@@ -527,8 +527,8 @@
     },
     "Friday": {
       "day": "Friday",
-      "date": "2025-12-19",
-      "date_number": "19",
+      "date": "2025-12-26",
+      "date_number": "26",
       "date_suffix": "th",
       "date_month": "Dec",
       "children": {
