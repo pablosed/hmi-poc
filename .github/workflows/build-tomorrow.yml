@@ -30,6 +30,12 @@ jobs:
         if: steps.date.outputs.date != ''
         run: node build.js --date=${{ steps.date.outputs.date }}
 
+      - name: Fetch weather
+        if: steps.date.outputs.date != ''
+        env:
+          OPENWEATHER_API_KEY: ${{ secrets.OPENWEATHER_API_KEY }}
+        run: node scripts/fetch-weather.js
+
       - name: Commit and push
         if: steps.date.outputs.date != ''
         run: |
@@ -39,7 +45,7 @@ jobs:
           fi
           git config user.name "github-actions"
           git config user.email "github-actions@users.noreply.github.com"
-          git add public/today.json public/week.json
+          git add public/today.json public/week.json public/weather.json
           git commit -m "Automated build for ${{ steps.date.outputs.date }}"
           git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/pablosed/hmi-poc.git
           git push
