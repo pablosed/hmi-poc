@@ -1,58 +1,50 @@
 {
-  "day": "Monday",
-  "date": "2025-12-22",
-  "date_number": "22",
-  "date_suffix": "nd",
+  "day": "Tuesday",
+  "date": "2025-12-23",
+  "date_number": "23",
+  "date_suffix": "rd",
   "date_month": "Dec",
   "children": {
     "C1": {
       "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
+        "code": "football_kit",
+        "label": "Football kit"
       },
       "pack": [
         {
-          "code": "water_bottle",
-          "label": "Water bottle"
-        },
-        {
-          "code": "sports_kit",
-          "label": "Sports kit"
-        },
-        {
-          "code": "snack",
-          "label": "Snack"
+          "code": "uniform",
+          "label": "Uniform"
         }
       ],
-      "dropoff": "08:15",
+      "dropoff": "07:30",
       "pickup": "17:00",
       "clubs": [
         {
-          "time": "08:00-08:30",
-          "name": "KS2 Choir",
-          "short_name": "Choir"
+          "time": "07:30-08:30",
+          "name": "Girls Football (Westway)",
+          "short_name": "Football"
         },
         {
           "time": "16:00-17:00",
-          "name": "Netball",
-          "short_name": "Netball"
+          "name": "Creative Art Club",
+          "short_name": "Art"
         }
       ],
-      "pack_display": "Water bottle, Sports kit, Snack",
-      "pack_line": "Water bottle, Sports kit, Snack",
+      "pack_display": "Uniform",
+      "pack_line": "Uniform",
       "pack_items": [
-        "Water bottle",
-        "Sports kit",
-        "Snack"
+        "Uniform",
+        "",
+        ""
       ],
-      "pack_item1": "Water bottle",
-      "pack_item2": "Sports kit",
-      "pack_item3": "Snack",
+      "pack_item1": "Uniform",
+      "pack_item2": "",
+      "pack_item3": "",
       "clubs_display": [
         {
-          "start": "08:00",
+          "start": "07:30",
           "end": "08:30",
-          "name": "Choir"
+          "name": "Football"
         },
         {
           "start": "-",
@@ -62,7 +54,7 @@
         {
           "start": "16:00",
           "end": "17:00",
-          "name": "Netball"
+          "name": "Art"
         },
         {
           "start": "-",
@@ -70,7 +62,7 @@
           "name": "-"
         }
       ],
-      "drop_display": "08:15",
+      "drop_display": "07:30",
       "pick_display": "17:00"
     },
     "C2": {
@@ -78,69 +70,61 @@
         "code": "uniform",
         "label": "Uniform"
       },
-      "pack": [
-        {
-          "code": "water_bottle",
-          "label": "Water bottle"
-        },
-        {
-          "code": "sports_kit",
-          "label": "Sports kit"
-        },
-        {
-          "code": "snack",
-          "label": "Snack"
-        }
-      ],
+      "pack": [],
       "dropoff": "08:15",
       "pickup": "17:00",
       "clubs": [
         {
           "time": "08:00-08:30",
-          "name": "KS2 Choir",
-          "short_name": "Choir"
+          "name": "Morning Drawing Club",
+          "short_name": "Drawing"
         },
         {
           "time": "12:45-13:15",
-          "name": "Dodgeball",
-          "short_name": "Dodgeball"
+          "name": "Chamber Choir",
+          "short_name": "Chamb. Choir"
         },
         {
           "time": "16:00-17:00",
-          "name": "Netball",
-          "short_name": "Netball"
+          "name": "Creative Art Club",
+          "short_name": "Art"
+        },
+        {
+          "time": "17:45-18:45",
+          "name": "Ballet at St Marys",
+          "short_name": "Ballet"
         }
       ],
-      "pack_display": "Water bottle, Sports kit, Snack",
-      "pack_line": "Water bottle, Sports kit, Snack",
+      "pack_display": "",
+      "pack_line": "-",
       "pack_items": [
-        "Water bottle",
-        "Sports kit",
-        "Snack"
+        "",
+        "",
+        ""
       ],
-      "pack_item1": "Water bottle",
-      "pack_item2": "Sports kit",
-      "pack_item3": "Snack",
+      "pack_item1": "",
+      "pack_item2": "",
+      "pack_item3": "",
       "clubs_display": [
         {
           "start": "08:00",
           "end": "08:30",
-          "name": "Choir"
+          "name": "Drawing"
         },
         {
           "start": "12:45",
           "end": "13:15",
-          "name": "Dodgeball"
+          "name": "Chamb. Choir"
         },
         {
           "start": "16:00",
           "end": "17:00",
-          "name": "Netball"
+          "name": "Art"
         },
         {
-          "start": "-",
-          "end": "-",
-          "name": "-"
+          "start": "17:45",
+          "end": "18:45",
+          "name": "Ballet"
         }
       ],
       "drop_display": "08:15",
