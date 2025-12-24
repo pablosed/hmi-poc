@@ -24,12 +24,14 @@ jobs:
       - name: Compute London date and guard hour
         id: date
         run: |
-          node -e "const tz='Europe/London'; const now=new Date(); const london=new Date(now.toLocaleString('en-GB',{timeZone:tz})); const hour=london.getHours(); if (hour!==18) { console.log('Not 18:00 Europe/London'); process.exit(0); } const tomorrow=new Date(london); tomorrow.setDate(tomorrow.getDate()+1); const iso=tomorrow.toISOString().slice(0,10); require('fs').appendFileSync(process.env.GITHUB_OUTPUT, `date=${iso}\n`);"
+          node -e "const tz='Europe/London'; const now=new Date(); const london=new Date(now.toLocaleString('en-GB',{timeZone:tz})); const hour=london.getHours(); if (hour!==18) { console.log('Not 18:00 Europe/London'); require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'date=\\n'); process.exit(0); } const tomorrow=new Date(london); tomorrow.setDate(tomorrow.getDate()+1); const iso=tomorrow.toISOString().slice(0,10); require('fs').appendFileSync(process.env.GITHUB_OUTPUT, `date=${iso}\\n`);"
 
       - name: Build tomorrow.json
+        if: steps.date.outputs.date != ''
         run: node build.js --date=${{ steps.date.outputs.date }}
 
       - name: Commit and push
+        if: steps.date.outputs.date != ''
         run: |
           if git diff --quiet; then
             echo "No changes to commit."
