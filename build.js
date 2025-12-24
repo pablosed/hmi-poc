@@ -174,6 +174,11 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
     }
     const clubs_display = slots.map(slot => slot || { start: '-', end: '-', name: '-' });
 
+    // Always show drop-off and pick-up times; override with club times when present.
+    clubs_display[0].start = slots[0]?.start || dropoff;
+    clubs_display[2].start = slots[2]?.start || pickup;
+    clubs_display[2].end = slots[2]?.end || pickup;
+
     // Add snack automatically for afternoon clubs (start between 15:00 and 17:00).
     const hasAfternoonClub = clubs_display.some(c => {
       const mins = toSortNum(c.start);

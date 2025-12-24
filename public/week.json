@@ -294,6 +294,10 @@
             {
               "code": "violin",
               "label": "Violin"
+            },
+            {
+              "code": "snack",
+              "label": "Snack"
             }
           ],
           "dropoff": "07:45",
@@ -310,15 +314,15 @@
               "short_name": "Touch-Typing"
             }
           ],
-          "pack_display": "Violin",
-          "pack_line": "Violin",
+          "pack_display": "Violin, Snack",
+          "pack_line": "Violin, Snack",
           "pack_items": [
             "Violin",
-            "",
+            "Snack",
             ""
           ],
           "pack_item1": "Violin",
-          "pack_item2": "",
+          "pack_item2": "Snack",
           "pack_item3": "",
           "clubs_display": [
             {
@@ -332,8 +336,8 @@
               "name": "Touch-Typing"
             },
             {
-              "start": "-",
-              "end": "-",
+              "start": "15:45",
+              "end": "15:45",
               "name": "-"
             },
             {
@@ -350,7 +354,12 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [],
+          "pack": [
+            {
+              "code": "snack",
+              "label": "Snack"
+            }
+          ],
           "dropoff": "08:15",
           "pickup": "16:00",
           "clubs": [
@@ -360,19 +369,19 @@
               "short_name": "Technical Drawing"
             }
           ],
-          "pack_display": "",
-          "pack_line": "-",
+          "pack_display": "Snack",
+          "pack_line": "Snack",
           "pack_items": [
-            "",
+            "Snack",
             "",
             ""
           ],
-          "pack_item1": "",
+          "pack_item1": "Snack",
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
             {
-              "start": "-",
+              "start": "08:15",
               "end": "-",
               "name": "-"
             },
@@ -382,8 +391,8 @@
               "name": "Technical Drawing"
             },
             {
-              "start": "-",
-              "end": "-",
+              "start": "16:00",
+              "end": "16:00",
               "name": "-"
             },
             {
@@ -450,8 +459,8 @@
               "name": "-"
             },
             {
-              "start": "-",
-              "end": "-",
+              "start": "15:45",
+              "end": "15:45",
               "name": "-"
             },
             {
@@ -510,8 +519,8 @@
               "name": "Creative Competitors"
             },
             {
-              "start": "-",
-              "end": "-",
+              "start": "16:00",
+              "end": "16:00",
               "name": "-"
             },
             {
@@ -553,7 +562,7 @@
           "pack_item3": "",
           "clubs_display": [
             {
-              "start": "-",
+              "start": "08:15",
               "end": "-",
               "name": "-"
             },
@@ -563,8 +572,8 @@
               "name": "-"
             },
             {
-              "start": "-",
-              "end": "-",
+              "start": "15:45",
+              "end": "15:45",
               "name": "-"
             },
             {
@@ -597,7 +606,7 @@
           "pack_item3": "",
           "clubs_display": [
             {
-              "start": "-",
+              "start": "08:15",
               "end": "-",
               "name": "-"
             },
@@ -607,8 +616,8 @@
               "name": "-"
             },
             {
-              "start": "-",
-              "end": "-",
+              "start": "16:00",
+              "end": "16:00",
               "name": "-"
             },
             {
