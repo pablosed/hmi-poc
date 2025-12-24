@@ -288,7 +288,6 @@ function main() {
   fs.writeFileSync(OUTPUT_WEEK, JSON.stringify(weekWithOverrides, null, 2));
 
   console.log(`Wrote ${OUTPUT_TODAY} and ${OUTPUT_WEEK}`);
-  console.log('Kids mapping (not included in JSON):', idToName);
 }
 
 main();
