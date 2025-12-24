@@ -173,10 +173,6 @@
             {
               "code": "uniform",
               "label": "Uniform"
-            },
-            {
-              "code": "snack",
-              "label": "Snack"
             }
           ],
           "dropoff": "07:30",
@@ -193,15 +189,15 @@
               "short_name": "Art"
             }
           ],
-          "pack_display": "Uniform, Snack",
-          "pack_line": "Uniform, Snack",
+          "pack_display": "Uniform",
+          "pack_line": "Uniform",
           "pack_items": [
             "Uniform",
-            "Snack",
+            "",
             ""
           ],
           "pack_item1": "Uniform",
-          "pack_item2": "Snack",
+          "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
             {
@@ -233,12 +229,7 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
+          "pack": [],
           "dropoff": "08:15",
           "pickup": "17:00",
           "clubs": [
@@ -260,17 +251,17 @@
             {
               "time": "17:45-18:45",
               "name": "Ballet at St Marys",
-              "short_name": "Ballet at St Marys"
+              "short_name": "Ballet"
             }
           ],
-          "pack_display": "Snack",
-          "pack_line": "Snack",
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Snack",
+            "",
             "",
             ""
           ],
-          "pack_item1": "Snack",
+          "pack_item1": "",
           "pack_item2": "",
           "pack_item3": "",
           "clubs_display": [
@@ -292,7 +283,7 @@
             {
               "start": "17:45",
               "end": "18:45",
-              "name": "Ballet at St Marys"
+              "name": "Ballet"
             }
           ],
           "drop_display": "08:15",
@@ -384,12 +375,12 @@
             {
               "time": "08:00-08:30",
               "name": "Advanced Art",
-              "short_name": "Advanced Art"
+              "short_name": "Adv. Art"
             },
             {
               "time": "17:30-18:30",
               "name": "Tutoring with Julia",
-              "short_name": "Tutoring with Julia"
+              "short_name": "Tutor w/ Julia"
             }
           ],
           "pack_display": "",
@@ -406,7 +397,7 @@
             {
               "start": "08:00",
               "end": "08:30",
-              "name": "Advanced Art"
+              "name": "Adv. Art"
             },
             {
               "start": "12:45",
@@ -421,7 +412,7 @@
             {
               "start": "17:30",
               "end": "18:30",
-              "name": "Tutoring with Julia"
+              "name": "Tutor w/ Julia"
             }
           ],
           "drop_display": "08:15",
@@ -462,7 +453,7 @@
             {
               "time": "16:30-17:30",
               "name": "Violin with Ms Vican",
-              "short_name": "Violin with Ms Vican"
+              "short_name": "Violin"
             }
           ],
           "pack_display": "Uniform, Swim kit (goggles, hat, swimsuit, towel)",
@@ -489,7 +480,7 @@
             {
               "start": "16:30",
               "end": "17:30",
-              "name": "Violin with Ms Vican"
+              "name": "Violin"
             },
             {
               "start": "-",

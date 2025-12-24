@@ -96,7 +96,11 @@ function shortNameForClub(fullName) {
     'Technical Drawing': 'Tech. Drawing',
     'Fencing': 'Fencing',
     'Advanced Musicianship': 'Adv. Music',
+    'Advanced Art': 'Adv. Art',
     'Creative Competitors': 'Creative Comp.',
+    'Violin with Ms Vican': 'Violin',
+    'Ballet at St Marys': 'Ballet',
+    'Tutoring with Julia': 'Tutor w/ Julia',
     'Dodgeball': 'Dodgeball',
     'Netball': 'Netball'
   };
