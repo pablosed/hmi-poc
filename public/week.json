@@ -9,9 +9,9 @@
   "week": {
     "Monday": {
       "day": "Monday",
-      "date": "2025-12-22",
-      "date_number": "22",
-      "date_suffix": "nd",
+      "date": "2025-12-29",
+      "date_number": "29",
+      "date_suffix": "th",
       "date_month": "Dec",
       "children": {
         "C1": {
@@ -159,9 +159,9 @@
     },
     "Tuesday": {
       "day": "Tuesday",
-      "date": "2025-12-23",
-      "date_number": "23",
-      "date_suffix": "rd",
+      "date": "2025-12-30",
+      "date_number": "30",
+      "date_suffix": "th",
       "date_month": "Dec",
       "children": {
         "C1": {
@@ -173,6 +173,10 @@
             {
               "code": "uniform",
               "label": "Uniform"
+            },
+            {
+              "code": "snack",
+              "label": "Snack"
             }
           ],
           "dropoff": "07:30",
@@ -189,16 +193,16 @@
               "short_name": "Art"
             }
           ],
-          "pack_display": "Uniform",
-          "pack_line": "Uniform",
+          "pack_display": "Uniform, Snack",
+          "pack_line": "Uniform, Snack",
           "pack_items": [
             "Uniform",
-            " ",
-            " "
+            "Snack",
+            " "
           ],
           "pack_item1": "Uniform",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item2": "Snack",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "07:30",
@@ -229,7 +233,12 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [],
+          "pack": [
+            {
+              "code": "snack",
+              "label": "Snack"
+            }
+          ],
           "dropoff": "08:15",
           "pickup": "17:00",
           "clubs": [
@@ -254,16 +263,16 @@
               "short_name": "Ballet"
             }
           ],
-          "pack_display": "",
-          "pack_line": "-",
+          "pack_display": "Snack",
+          "pack_line": "Snack",
           "pack_items": [
-            " ",
-            " ",
-            " "
+            "Snack",
+            " ",
+            " "
           ],
-          "pack_item1": " ",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item1": "Snack",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:00",
@@ -293,9 +302,9 @@
     },
     "Wednesday": {
       "day": "Wednesday",
-      "date": "2025-12-24",
-      "date_number": "24",
-      "date_suffix": "th",
+      "date": "2025-12-31",
+      "date_number": "31",
+      "date_suffix": "st",
       "date_month": "Dec",
       "children": {
         "C1": {
@@ -327,12 +336,12 @@
           "pack_line": "Violin",
           "pack_items": [
             "Violin",
-            " ",
-            " "
+            " ",
+            " "
           ],
           "pack_item1": "Violin",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "07:45",
@@ -386,13 +395,13 @@
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
-            " ",
-            " ",
-            " "
+            " ",
+            " ",
+            " "
           ],
-          "pack_item1": " ",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item1": " ",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:00",
@@ -422,10 +431,10 @@
     },
     "Thursday": {
       "day": "Thursday",
-      "date": "2025-12-25",
-      "date_number": "25",
-      "date_suffix": "th",
-      "date_month": "Dec",
+      "date": "2026-01-01",
+      "date_number": "1",
+      "date_suffix": "st",
+      "date_month": "Jan",
       "children": {
         "C1": {
           "clothing": {
@@ -461,11 +470,11 @@
           "pack_items": [
             "Uniform",
             "Swim Stuff",
-            " "
+            " "
           ],
           "pack_item1": "Uniform",
           "pack_item2": "Swim Stuff",
-          "pack_item3": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "07:45",
@@ -520,12 +529,12 @@
           "pack_line": "Swim Stuff",
           "pack_items": [
             "Swim Stuff",
-            " ",
-            " "
+            " ",
+            " "
           ],
           "pack_item1": "Swim Stuff",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:00",
@@ -555,35 +564,30 @@
     },
     "Friday": {
       "day": "Friday",
-      "date": "2025-12-26",
-      "date_number": "26",
-      "date_suffix": "th",
-      "date_month": "Dec",
+      "date": "2026-01-02",
+      "date_number": "2",
+      "date_suffix": "nd",
+      "date_month": "Jan",
       "children": {
         "C1": {
           "clothing": {
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
+          "pack": [],
           "dropoff": "08:15",
           "pickup": "15:45",
           "clubs": [],
-          "pack_display": "Snack",
-          "pack_line": "Snack",
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Snack",
-            " ",
-            " "
+            " ",
+            " ",
+            " "
           ],
-          "pack_item1": "Snack",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item1": " ",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:15",
@@ -614,25 +618,20 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [
-            {
-              "code": "snack",
-              "label": "Snack"
-            }
-          ],
+          "pack": [],
           "dropoff": "08:15",
           "pickup": "16:00",
           "clubs": [],
-          "pack_display": "Snack",
-          "pack_line": "Snack",
+          "pack_display": "",
+          "pack_line": "-",
           "pack_items": [
-            "Snack",
-            " ",
-            " "
+            " ",
+            " ",
+            " "
           ],
-          "pack_item1": "Snack",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item1": " ",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:15",
