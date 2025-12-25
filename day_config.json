@@ -129,13 +129,13 @@
   "meta": {
     "clothing_labels": {
       "uniform": "Uniform",
-      "sports_kit": "Sports kit",
-      "football_kit": "Football kit",
+      "sports_kit": "Sports Kit",
+      "football_kit": "Football Kit",
       "pe_kit": "PE kit"
     },
     "pack_labels": {
       "water_bottle": "Water bottle",
-      "sports_kit": "Sports kit",
+      "sports_kit": "Sports Kit",
       "violin": "Violin",
       "swim_kit": "Swim Stuff",
       "uniform": "Uniform",
