@@ -47,15 +47,15 @@
               "short_name": "Netball"
             }
           ],
-          "pack_display": "Water bottle, Sports kit, Snack",
-          "pack_line": "Water bottle, Sports kit, Snack",
+          "pack_display": "Water bottle, Sports Kit, Snack",
+          "pack_line": "Water bottle, Sports Kit, Snack",
           "pack_items": [
             "Water bottle",
-            "Sports kit",
+            "Sports Kit",
             "Snack"
           ],
           "pack_item1": "Water bottle",
-          "pack_item2": "Sports kit",
+          "pack_item2": "Sports Kit",
           "pack_item3": "Snack",
           "clubs_display": [
             {
@@ -94,7 +94,7 @@
             },
             {
               "code": "sports_kit",
-              "label": "Sports kit"
+              "label": "Sports Kit"
             },
             {
               "code": "snack",
@@ -120,15 +120,15 @@
               "short_name": "Netball"
             }
           ],
-          "pack_display": "Water bottle, Sports kit, Snack",
-          "pack_line": "Water bottle, Sports kit, Snack",
+          "pack_display": "Water bottle, Sports Kit, Snack",
+          "pack_line": "Water bottle, Sports Kit, Snack",
           "pack_items": [
             "Water bottle",
-            "Sports kit",
+            "Sports Kit",
             "Snack"
           ],
           "pack_item1": "Water bottle",
-          "pack_item2": "Sports kit",
+          "pack_item2": "Sports Kit",
           "pack_item3": "Snack",
           "clubs_display": [
             {
@@ -167,7 +167,7 @@
         "C1": {
           "clothing": {
             "code": "football_kit",
-            "label": "Football kit"
+            "label": "Football Kit"
           },
           "pack": [
             {
@@ -193,12 +193,12 @@
           "pack_line": "Uniform",
           "pack_items": [
             "Uniform",
-            "",
-            ""
+            " ",
+            " "
           ],
           "pack_item1": "Uniform",
-          "pack_item2": "",
-          "pack_item3": "",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "07:30",
@@ -257,13 +257,13 @@
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
-            "",
-            "",
-            ""
+            " ",
+            " ",
+            " "
           ],
-          "pack_item1": "",
-          "pack_item2": "",
-          "pack_item3": "",
+          "pack_item1": " ",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:00",
@@ -327,12 +327,12 @@
           "pack_line": "Violin",
           "pack_items": [
             "Violin",
-            "",
-            ""
+            " ",
+            " "
           ],
           "pack_item1": "Violin",
-          "pack_item2": "",
-          "pack_item3": "",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "07:45",
@@ -386,13 +386,13 @@
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
-            "",
-            "",
-            ""
+            " ",
+            " ",
+            " "
           ],
-          "pack_item1": "",
-          "pack_item2": "",
-          "pack_item3": "",
+          "pack_item1": " ",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:00",
@@ -430,7 +430,7 @@
         "C1": {
           "clothing": {
             "code": "sports_kit",
-            "label": "Sports kit"
+            "label": "Sports Kit"
           },
           "pack": [
             {
@@ -529,11 +529,11 @@
           "pack_items": [
             "Swim Stuff",
             "Snack",
-            ""
+            " "
           ],
           "pack_item1": "Swim Stuff",
           "pack_item2": "Snack",
-          "pack_item3": "",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:00",
@@ -580,13 +580,13 @@
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
-            "",
-            "",
-            ""
+            " ",
+            " ",
+            " "
           ],
-          "pack_item1": "",
-          "pack_item2": "",
-          "pack_item3": "",
+          "pack_item1": " ",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:15",
@@ -624,13 +624,13 @@
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
-            "",
-            "",
-            ""
+            " ",
+            " ",
+            " "
           ],
-          "pack_item1": "",
-          "pack_item2": "",
-          "pack_item3": "",
+          "pack_item1": " ",
+          "pack_item2": " ",
+          "pack_item3": " ",
           "clubs_display": [
             {
               "start": "08:15",

@@ -39,11 +39,11 @@
       "pack_items": [
         "Uniform",
         "Swim Stuff",
-        ""
+        " "
       ],
       "pack_item1": "Uniform",
       "pack_item2": "Swim Stuff",
-      "pack_item3": "",
+      "pack_item3": " ",
       "clubs_display": [
         {
           "start": "07:45",
@@ -98,12 +98,12 @@
       "pack_line": "Swim Stuff",
       "pack_items": [
         "Swim Stuff",
-        "",
-        ""
+        " ",
+        " "
       ],
       "pack_item1": "Swim Stuff",
-      "pack_item2": "",
-      "pack_item3": "",
+      "pack_item2": " ",
+      "pack_item3": " ",
       "clubs_display": [
         {
           "start": "08:00",

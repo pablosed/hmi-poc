@@ -211,7 +211,7 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
     const pack_labels = pack.map(p => p.label);
     const pack_display = pack_labels.join(', ');
     const pack_items = [...pack_labels];
-    while (pack_items.length < 3) pack_items.push('');
+    while (pack_items.length < 3) pack_items.push(' ');
 
     children[kidId] = {
       clothing: { code: clothingCode, label: clothingLabel },
@@ -222,9 +222,9 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
       pack_display,
       pack_line: pack_display || '-',
       pack_items,
-      pack_item1: pack_items[0],
-      pack_item2: pack_items[1],
-      pack_item3: pack_items[2],
+      pack_item1: pack_items[0] || ' ',
+      pack_item2: pack_items[1] || ' ',
+      pack_item3: pack_items[2] || ' ',
       clubs_display,
       drop_display: dropoff,
       pick_display: pickup
