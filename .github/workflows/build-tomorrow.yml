@@ -5,6 +5,11 @@ on:
     # Run hourly and only proceed at 18:00 Europe/London
     - cron: '0 * * * *'
   workflow_dispatch:
+    inputs:
+      date:
+        description: 'Optional YYYY-MM-DD to build immediately'
+        required: false
+        type: string
 
 permissions:
   contents: write
@@ -24,7 +29,19 @@ jobs:
       - name: Compute London date and guard hour
         id: date
         run: |
-          node -e "const tz='Europe/London'; const now=new Date(); const fmt=new Intl.DateTimeFormat('en-GB',{timeZone:tz, year:'numeric', month:'2-digit', day:'2-digit', hour:'2-digit', hour12:false}); const parts=Object.fromEntries(fmt.formatToParts(now).map(p=>[p.type,p.value])); const hour=Number(parts.hour); if (hour!==18) { console.log('Not 18:00–18:59 Europe/London'); require('fs').appendFileSync(process.env.GITHUB_OUTPUT, 'date=\\n'); process.exit(0); } const tomorrow=new Date(Date.UTC(Number(parts.year), Number(parts.month)-1, Number(parts.day)+1)); const iso=tomorrow.toISOString().slice(0,10); require('fs').appendFileSync(process.env.GITHUB_OUTPUT, `date=${iso}\\n`);"
+          OUTPUT_FILE="${GITHUB_OUTPUT:-/tmp/github_output}"
+          if [ -n "${{ inputs.date }}" ]; then
+            echo "Using manual date: ${{ inputs.date }}"
+            echo "date=${{ inputs.date }}" >> "$OUTPUT_FILE"
+            exit 0
+          fi
+          hour="$(TZ=Europe/London date +%H)"
+          if [ "$hour" != "18" ]; then
+            echo "Not 18:00–18:59 Europe/London"
+            echo "date=" >> "$OUTPUT_FILE"
+            exit 0
+          fi
+          echo "date=$(TZ=Europe/London date -d 'tomorrow' +%Y-%m-%d)" >> "$OUTPUT_FILE"
 
       - name: Build tomorrow.json
         if: steps.date.outputs.date != ''
