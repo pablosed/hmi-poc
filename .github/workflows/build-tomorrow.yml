@@ -17,6 +17,8 @@ permissions:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      GUARD_HOUR: '07'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -36,8 +38,8 @@ jobs:
             exit 0
           fi
           hour="$(TZ=Europe/London date +%H)"
-          if [ "$hour" != "18" ]; then
-            echo "Not 18:00–18:59 Europe/London"
+          if [ "$hour" != "${GUARD_HOUR}" ]; then
+            echo "Not ${GUARD_HOUR}:00–${GUARD_HOUR}:59 Europe/London"
             echo "date=" >> "$OUTPUT_FILE"
             exit 0
           fi
