@@ -3,7 +3,7 @@ name: Build Tomorrow Schedule
 on:
   schedule:
     # Run hourly and only proceed at 18:00 Europe/London
-    - cron: '29 7 * * *'
+    - cron: '*/5 * * * *'
   workflow_dispatch:
     inputs:
       date:
