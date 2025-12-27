@@ -9,9 +9,9 @@
   "week": {
     "Monday": {
       "day": "Monday",
-      "date": "2025-12-29",
-      "date_number": "29",
-      "date_suffix": "th",
+      "date": "2025-12-22",
+      "date_number": "22",
+      "date_suffix": "nd",
       "date_month": "Dec",
       "children": {
         "C1": {
@@ -159,9 +159,9 @@
     },
     "Tuesday": {
       "day": "Tuesday",
-      "date": "2025-12-30",
-      "date_number": "30",
-      "date_suffix": "th",
+      "date": "2025-12-23",
+      "date_number": "23",
+      "date_suffix": "rd",
       "date_month": "Dec",
       "children": {
         "C1": {
@@ -293,9 +293,9 @@
     },
     "Wednesday": {
       "day": "Wednesday",
-      "date": "2025-12-31",
-      "date_number": "31",
-      "date_suffix": "st",
+      "date": "2025-12-24",
+      "date_number": "24",
+      "date_suffix": "th",
       "date_month": "Dec",
       "children": {
         "C1": {
@@ -422,10 +422,10 @@
     },
     "Thursday": {
       "day": "Thursday",
-      "date": "2026-01-01",
-      "date_number": "1",
-      "date_suffix": "st",
-      "date_month": "Jan",
+      "date": "2025-12-25",
+      "date_number": "25",
+      "date_suffix": "th",
+      "date_month": "Dec",
       "children": {
         "C1": {
           "clothing": {
@@ -555,10 +555,10 @@
     },
     "Friday": {
       "day": "Friday",
-      "date": "2026-01-02",
-      "date_number": "2",
-      "date_suffix": "nd",
-      "date_month": "Jan",
+      "date": "2025-12-26",
+      "date_number": "26",
+      "date_suffix": "th",
+      "date_month": "Dec",
       "children": {
         "C1": {
           "clothing": {

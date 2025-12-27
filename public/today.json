@@ -1,58 +1,33 @@
 {
-  "day": "Monday",
-  "date": "2025-12-29",
-  "date_number": "29",
+  "day": "Saturday",
+  "date": "2025-12-27",
+  "date_number": "27",
   "date_suffix": "th",
   "date_month": "Dec",
   "children": {
     "C1": {
       "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
+        "label": ""
       },
-      "pack": [
-        {
-          "code": "water_bottle",
-          "label": "Water bottle"
-        },
-        {
-          "code": "sports_kit",
-          "label": "Sports Kit"
-        },
-        {
-          "code": "snack",
-          "label": "Snack"
-        }
-      ],
+      "pack": [],
       "dropoff": "08:15",
-      "pickup": "17:00",
-      "clubs": [
-        {
-          "time": "08:00-08:30",
-          "name": "KS2 Choir",
-          "short_name": "Choir"
-        },
-        {
-          "time": "16:00-17:00",
-          "name": "Netball",
-          "short_name": "Netball"
-        }
-      ],
-      "pack_display": "Water bottle, Sports Kit, Snack",
-      "pack_line": "Water bottle, Sports Kit, Snack",
+      "pickup": "15:45",
+      "clubs": [],
+      "pack_display": "",
+      "pack_line": "-",
       "pack_items": [
-        "Water bottle",
-        "Sports Kit",
-        "Snack"
+        " ",
+        " ",
+        " "
       ],
-      "pack_item1": "Water bottle",
-      "pack_item2": "Sports Kit",
-      "pack_item3": "Snack",
+      "pack_item1": " ",
+      "pack_item2": " ",
+      "pack_item3": " ",
       "clubs_display": [
         {
-          "start": "08:00",
-          "end": "08:30",
-          "name": "Choir"
+          "start": "08:15",
+          "end": "-",
+          "name": "-"
         },
         {
           "start": "-",
@@ -60,9 +35,9 @@
           "name": "-"
         },
         {
-          "start": "16:00",
-          "end": "17:00",
-          "name": "Netball"
+          "start": "15:45",
+          "end": "15:45",
+          "name": "-"
         },
         {
           "start": "-",
@@ -71,71 +46,41 @@
         }
       ],
       "drop_display": "08:15",
-      "pick_display": "17:00"
+      "pick_display": "15:45"
     },
     "C2": {
       "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
+        "label": ""
       },
-      "pack": [
-        {
-          "code": "water_bottle",
-          "label": "Water bottle"
-        },
-        {
-          "code": "sports_kit",
-          "label": "Sports Kit"
-        },
-        {
-          "code": "snack",
-          "label": "Snack"
-        }
-      ],
+      "pack": [],
       "dropoff": "08:15",
-      "pickup": "17:00",
-      "clubs": [
-        {
-          "time": "08:00-08:30",
-          "name": "KS2 Choir",
-          "short_name": "Choir"
-        },
-        {
-          "time": "12:45-13:15",
-          "name": "Dodgeball",
-          "short_name": "Dodgeball"
-        },
-        {
-          "time": "16:00-17:00",
-          "name": "Netball",
-          "short_name": "Netball"
-        }
-      ],
-      "pack_display": "Water bottle, Sports Kit, Snack",
-      "pack_line": "Water bottle, Sports Kit, Snack",
+      "pickup": "16:00",
+      "clubs": [],
+      "pack_display": "",
+      "pack_line": "-",
       "pack_items": [
-        "Water bottle",
-        "Sports Kit",
-        "Snack"
+        " ",
+        " ",
+        " "
       ],
-      "pack_item1": "Water bottle",
-      "pack_item2": "Sports Kit",
-      "pack_item3": "Snack",
+      "pack_item1": " ",
+      "pack_item2": " ",
+      "pack_item3": " ",
       "clubs_display": [
         {
-          "start": "08:00",
-          "end": "08:30",
-          "name": "Choir"
+          "start": "08:15",
+          "end": "-",
+          "name": "-"
         },
         {
-          "start": "12:45",
-          "end": "13:15",
-          "name": "Dodgeball"
+          "start": "-",
+          "end": "-",
+          "name": "-"
         },
         {
           "start": "16:00",
-          "end": "17:00",
-          "name": "Netball"
+          "end": "16:00",
+          "name": "-"
         },
         {
           "start": "-",
@@ -144,7 +89,7 @@
         }
       ],
       "drop_display": "08:15",
-      "pick_display": "17:00"
+      "pick_display": "16:00"
     }
   }
 }
