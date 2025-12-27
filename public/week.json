@@ -173,6 +173,10 @@
             {
               "code": "uniform",
               "label": "Uniform"
+            },
+            {
+              "code": "snack",
+              "label": "Snack"
             }
           ],
           "dropoff": "07:30",
@@ -189,15 +193,15 @@
               "short_name": "Art"
             }
           ],
-          "pack_display": "Uniform",
-          "pack_line": "Uniform",
+          "pack_display": "Uniform, Snack",
+          "pack_line": "Uniform, Snack",
           "pack_items": [
             "Uniform",
-            "-",
+            "Snack",
             "-"
           ],
           "pack_item1": "Uniform",
-          "pack_item2": "-",
+          "pack_item2": "Snack",
           "pack_item3": "-",
           "clubs_display": [
             {
@@ -229,7 +233,12 @@
             "code": "uniform",
             "label": "Uniform"
           },
-          "pack": [],
+          "pack": [
+            {
+              "code": "snack",
+              "label": "Snack"
+            }
+          ],
           "dropoff": "08:15",
           "pickup": "17:00",
           "clubs": [
@@ -254,14 +263,14 @@
               "short_name": "Ballet"
             }
           ],
-          "pack_display": "",
-          "pack_line": "-",
+          "pack_display": "Snack",
+          "pack_line": "Snack",
           "pack_items": [
-            "-",
+            "Snack",
             "-",
             "-"
           ],
-          "pack_item1": "-",
+          "pack_item1": "Snack",
           "pack_item2": "-",
           "pack_item3": "-",
           "clubs_display": [
