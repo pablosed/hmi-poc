@@ -16,13 +16,13 @@
       "pack_display": "",
       "pack_line": "-",
       "pack_items": [
-        " ",
-        " ",
-        " "
+        "-",
+        "-",
+        "-"
       ],
-      "pack_item1": " ",
-      "pack_item2": " ",
-      "pack_item3": " ",
+      "pack_item1": "-",
+      "pack_item2": "-",
+      "pack_item3": "-",
       "clubs_display": [
         {
           "start": "08:15",
@@ -59,13 +59,13 @@
       "pack_display": "",
       "pack_line": "-",
       "pack_items": [
-        " ",
-        " ",
-        " "
+        "-",
+        "-",
+        "-"
       ],
-      "pack_item1": " ",
-      "pack_item2": " ",
-      "pack_item3": " ",
+      "pack_item1": "-",
+      "pack_item2": "-",
+      "pack_item3": "-",
       "clubs_display": [
         {
           "start": "08:15",

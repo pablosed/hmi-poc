@@ -193,12 +193,12 @@
           "pack_line": "Uniform",
           "pack_items": [
             "Uniform",
-            " ",
-            " "
+            "-",
+            "-"
           ],
           "pack_item1": "Uniform",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item2": "-",
+          "pack_item3": "-",
           "clubs_display": [
             {
               "start": "07:30",
@@ -257,13 +257,13 @@
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
-            " ",
-            " ",
-            " "
+            "-",
+            "-",
+            "-"
           ],
-          "pack_item1": " ",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item1": "-",
+          "pack_item2": "-",
+          "pack_item3": "-",
           "clubs_display": [
             {
               "start": "08:00",
@@ -327,12 +327,12 @@
           "pack_line": "Violin",
           "pack_items": [
             "Violin",
-            " ",
-            " "
+            "-",
+            "-"
           ],
           "pack_item1": "Violin",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item2": "-",
+          "pack_item3": "-",
           "clubs_display": [
             {
               "start": "07:45",
@@ -386,13 +386,13 @@
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
-            " ",
-            " ",
-            " "
+            "-",
+            "-",
+            "-"
           ],
-          "pack_item1": " ",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item1": "-",
+          "pack_item2": "-",
+          "pack_item3": "-",
           "clubs_display": [
             {
               "start": "08:00",
@@ -461,11 +461,11 @@
           "pack_items": [
             "Uniform",
             "Swim Stuff",
-            " "
+            "-"
           ],
           "pack_item1": "Uniform",
           "pack_item2": "Swim Stuff",
-          "pack_item3": " ",
+          "pack_item3": "-",
           "clubs_display": [
             {
               "start": "07:45",
@@ -520,12 +520,12 @@
           "pack_line": "Swim Stuff",
           "pack_items": [
             "Swim Stuff",
-            " ",
-            " "
+            "-",
+            "-"
           ],
           "pack_item1": "Swim Stuff",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item2": "-",
+          "pack_item3": "-",
           "clubs_display": [
             {
               "start": "08:00",
@@ -572,13 +572,13 @@
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
-            " ",
-            " ",
-            " "
+            "-",
+            "-",
+            "-"
           ],
-          "pack_item1": " ",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item1": "-",
+          "pack_item2": "-",
+          "pack_item3": "-",
           "clubs_display": [
             {
               "start": "08:15",
@@ -616,13 +616,13 @@
           "pack_display": "",
           "pack_line": "-",
           "pack_items": [
-            " ",
-            " ",
-            " "
+            "-",
+            "-",
+            "-"
           ],
-          "pack_item1": " ",
-          "pack_item2": " ",
-          "pack_item3": " ",
+          "pack_item1": "-",
+          "pack_item2": "-",
+          "pack_item3": "-",
           "clubs_display": [
             {
               "start": "08:15",
