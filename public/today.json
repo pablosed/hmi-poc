@@ -1,76 +1,50 @@
 {
-  "day": "Saturday",
-  "date": "2025-12-27",
-  "date_number": "27",
+  "day": "Tuesday",
+  "date": "2025-12-30",
+  "date_number": "30",
   "date_suffix": "th",
   "date_month": "Dec",
   "children": {
     "C1": {
       "clothing": {
-        "label": ""
+        "code": "football_kit",
+        "label": "Football Kit"
       },
-      "pack": [],
-      "dropoff": "08:15",
-      "pickup": "15:45",
-      "clubs": [],
-      "pack_display": "",
-      "pack_line": "-",
-      "pack_items": [
-        "-",
-        "-",
-        "-"
-      ],
-      "pack_item1": "-",
-      "pack_item2": "-",
-      "pack_item3": "-",
-      "clubs_display": [
+      "pack": [
         {
-          "start": "08:15",
-          "end": "-",
-          "name": "-"
-        },
-        {
-          "start": "-",
-          "end": "-",
-          "name": "-"
-        },
-        {
-          "start": "15:45",
-          "end": "15:45",
-          "name": "-"
-        },
-        {
-          "start": "-",
-          "end": "-",
-          "name": "-"
+          "code": "uniform",
+          "label": "Uniform"
         }
       ],
-      "drop_display": "08:15",
-      "pick_display": "15:45"
-    },
-    "C2": {
-      "clothing": {
-        "label": ""
-      },
-      "pack": [],
-      "dropoff": "08:15",
-      "pickup": "16:00",
-      "clubs": [],
-      "pack_display": "",
-      "pack_line": "-",
+      "dropoff": "07:30",
+      "pickup": "17:00",
+      "clubs": [
+        {
+          "time": "07:30-08:30",
+          "name": "Girls Football (Westway)",
+          "short_name": "Football"
+        },
+        {
+          "time": "16:00-17:00",
+          "name": "Creative Art Club",
+          "short_name": "Art"
+        }
+      ],
+      "pack_display": "Uniform",
+      "pack_line": "Uniform",
       "pack_items": [
-        "-",
+        "Uniform",
         "-",
         "-"
       ],
-      "pack_item1": "-",
+      "pack_item1": "Uniform",
       "pack_item2": "-",
       "pack_item3": "-",
       "clubs_display": [
         {
-          "start": "08:15",
-          "end": "-",
-          "name": "-"
+          "start": "07:30",
+          "end": "08:30",
+          "name": "Football"
         },
         {
           "start": "-",
@@ -79,8 +53,8 @@
         },
         {
           "start": "16:00",
-          "end": "16:00",
-          "name": "-"
+          "end": "17:00",
+          "name": "Art"
         },
         {
           "start": "-",
@@ -88,8 +62,73 @@
           "name": "-"
         }
       ],
+      "drop_display": "07:30",
+      "pick_display": "17:00"
+    },
+    "C2": {
+      "clothing": {
+        "code": "uniform",
+        "label": "Uniform"
+      },
+      "pack": [],
+      "dropoff": "08:15",
+      "pickup": "17:00",
+      "clubs": [
+        {
+          "time": "08:00-08:30",
+          "name": "Morning Drawing Club",
+          "short_name": "Drawing"
+        },
+        {
+          "time": "12:45-13:15",
+          "name": "Chamber Choir",
+          "short_name": "Chamb. Choir"
+        },
+        {
+          "time": "16:00-17:00",
+          "name": "Creative Art Club",
+          "short_name": "Art"
+        },
+        {
+          "time": "17:45-18:45",
+          "name": "Ballet at St Marys",
+          "short_name": "Ballet"
+        }
+      ],
+      "pack_display": "",
+      "pack_line": "-",
+      "pack_items": [
+        "-",
+        "-",
+        "-"
+      ],
+      "pack_item1": "-",
+      "pack_item2": "-",
+      "pack_item3": "-",
+      "clubs_display": [
+        {
+          "start": "08:00",
+          "end": "08:30",
+          "name": "Drawing"
+        },
+        {
+          "start": "12:45",
+          "end": "13:15",
+          "name": "Chamb. Choir"
+        },
+        {
+          "start": "16:00",
+          "end": "17:00",
+          "name": "Art"
+        },
+        {
+          "start": "17:45",
+          "end": "18:45",
+          "name": "Ballet"
+        }
+      ],
       "drop_display": "08:15",
-      "pick_display": "16:00"
+      "pick_display": "17:00"
     }
   }
 }
