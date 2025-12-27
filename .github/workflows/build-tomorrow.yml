@@ -3,7 +3,7 @@ name: Build Tomorrow Schedule
 on:
   schedule:
     # Run hourly and only proceed at 18:00 Europe/London
-    - cron: '*/5 * * * *'
+    - cron: '0 * * * *'
   workflow_dispatch:
     inputs:
       date:
@@ -18,7 +18,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     env:
-      GUARD_HOUR: '07'
+      GUARD_HOUR: '18'
     steps:
       - name: Checkout
         uses: actions/checkout@v4
