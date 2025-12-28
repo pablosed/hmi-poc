@@ -1,16 +1,17 @@
 #!/usr/bin/env node
 // Simple builder to emit anonymized today.json and week.json for SenseCraft HMI.
-// Inputs: day_config.json, club_schedule.json, overrides.json
-// Outputs: public/today.json, public/week.json
+// Inputs: day_config.json, club_schedule.json, pack_schedule.json, overrides.json
+// Outputs: public/today.json (daily), public/week.json (weekly v1)
 
 const fs = require('fs');
 const path = require('path');
 
+const OUTPUT_DIR = path.join(__dirname, 'public');
 const INPUT_DAY_CONFIG = path.join(__dirname, 'day_config.json');
 const INPUT_CLUBS = path.join(__dirname, 'club_schedule.json');
 const INPUT_PACK = path.join(__dirname, 'pack_schedule.json');
 const INPUT_OVERRIDES = path.join(__dirname, 'overrides.json');
-const OUTPUT_DIR = path.join(__dirname, 'public');
+const INPUT_EXCEPTIONS = path.join(OUTPUT_DIR, 'schedule_exceptions.json');
 const OUTPUT_TODAY = path.join(OUTPUT_DIR, 'today.json');
 const OUTPUT_WEEK = path.join(OUTPUT_DIR, 'week.json');
 
@@ -105,6 +106,38 @@ function shortNameForClub(fullName) {
     'Netball': 'Netball'
   };
   return map[cleaned] || cleaned;
+}
+
+function weeklyTokenForClub(fullName) {
+  const cleaned = String(fullName).replace(/\s*\(selective\)\s*/i, '').trim();
+  const map = {
+    'KS2 Choir': 'Choir',
+    'Girls Football (Westway)': 'FB',
+    'Morning Drawing Club': 'Draw',
+    'Chamber Choir': 'ChChoir',
+    'Creative Art Club': 'Art',
+    'Orchestra': 'Orch',
+    'Touch-Typing': 'Typing',
+    'Technical Drawing': 'TechDraw',
+    'Fencing': 'Fence',
+    'Advanced Musicianship': 'Mus',
+    'Advanced Art': 'AdvArt',
+    'Creative Competitors': 'Comp',
+    'Violin with Ms Vican': 'Violin',
+    'Ballet at St Marys': 'Ballet',
+    'Tutoring with Julia': 'Tutor',
+    'Dodgeball': 'Dodge',
+    'Netball': 'Net'
+  };
+  const token = map[cleaned] || shortNameForClub(cleaned);
+  return token.length > 8 ? token.slice(0, 8) : token;
+}
+
+function lessonToken(label) {
+  const cleaned = String(label || '').trim().toLowerCase();
+  if (cleaned === 'piano') return 'Pno';
+  if (cleaned === 'singing') return 'Sing';
+  return '';
 }
 
 function deepMerge(target, source) {
@@ -257,6 +290,74 @@ function buildWeek(mondayDate, dayConfig, clubSchedule, packSchedule) {
   return { week_order: Object.keys(week), week };
 }
 
+function buildWeekV1(mondayDate, clubSchedule, exceptions) {
+  const week_of = isoDate(mondayDate);
+  const days = {};
+  const dayOrder = ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'];
+  const dayKeyMap = {
+    Monday: 'mon',
+    Tuesday: 'tue',
+    Wednesday: 'wed',
+    Thursday: 'thu',
+    Friday: 'fri'
+  };
+
+  const emptyDay = () => ({
+    C1: { am: [], lunch: [], pm: [], lesson: [] },
+    C2: { am: [], lunch: [], pm: [], lesson: [] }
+  });
+
+  dayOrder.forEach(dayName => {
+    days[dayKeyMap[dayName]] = emptyDay();
+  });
+
+  const toMinutes = (timeStr) => {
+    const match = String(timeStr || '').match(/^(\d{1,2}):(\d{2})/);
+    if (!match) return NaN;
+    const hours = Number(match[1]);
+    const minutes = Number(match[2]);
+    return hours * 60 + minutes;
+  };
+
+  const bandForStart = (start) => {
+    if (!Number.isFinite(start)) return null;
+    if (start < 11 * 60) return 'am';
+    if (start < 14 * 60) return 'lunch';
+    return 'pm';
+  };
+
+  dayOrder.forEach(dayName => {
+    const key = dayKeyMap[dayName];
+    const clubs = (clubSchedule.clubs && clubSchedule.clubs[dayName]) || [];
+    clubs.forEach(entry => {
+      const token = weeklyTokenForClub(entry.club);
+      const start = toMinutes(String(entry.time || '').split('-')[0]);
+      const band = bandForStart(start);
+      if (!band || !token) return;
+      (entry.participants || []).forEach(child => {
+        if (!days[key]?.[child]) return;
+        days[key][child][band].push(token);
+      });
+    });
+  });
+
+  const flags = { music_books: { mon: false, tue: false, wed: false, thu: false, fri: false } };
+  const exceptionsList = Array.isArray(exceptions?.exceptions) ? exceptions.exceptions : [];
+  exceptionsList.forEach(entry => {
+    if (entry.kind !== 'in_day_lesson') return;
+    const dayName = dayNameOf(new Date(entry.date));
+    const dayKey = dayKeyMap[dayName];
+    if (!dayKey || !days[dayKey]) return;
+    const child = entry.child;
+    const token = lessonToken(entry.label);
+    if (!token || !days[dayKey][child]) return;
+    days[dayKey][child].lesson.push(token);
+    flags.music_books[dayKey] = true;
+  });
+
+  return { week_of, days, flags, events: {} };
+}
+
 function applyOverrides(base, overrides) {
   return deepMerge(base, overrides);
 }
@@ -266,6 +367,7 @@ function main() {
   const clubSchedule = readJsonSafe(INPUT_CLUBS);
   const packSchedule = readJsonSafe(INPUT_PACK);
   const overridesAll = readJsonSafe(INPUT_OVERRIDES);
+  const scheduleExceptions = readJsonSafe(INPUT_EXCEPTIONS);
 
   const targetDate = getTargetDate();
   const todayIso = isoDate(targetDate);
@@ -276,12 +378,7 @@ function main() {
   const today = applyOverrides(todayBase, todayOverrides);
 
   const monday = startOfWeekMonday(targetDate);
-  const weekBase = buildWeek(monday, dayConfig, clubSchedule, packSchedule);
-  const weekWithOverrides = { week_order: weekBase.week_order, week: {} };
-  for (const [dayName, dayData] of Object.entries(weekBase.week)) {
-    const overridesForDay = overridesAll.by_date?.[dayData.date];
-    weekWithOverrides.week[dayName] = applyOverrides(dayData, overridesForDay);
-  }
+  const weekWithOverrides = buildWeekV1(monday, clubSchedule, scheduleExceptions);
 
   ensureDir(OUTPUT_DIR);
   fs.writeFileSync(OUTPUT_TODAY, JSON.stringify(today, null, 2));
