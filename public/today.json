@@ -1,60 +1,60 @@
 {
-  "day": "Tuesday",
-  "date": "2025-12-30",
-  "date_number": "30",
-  "date_suffix": "th",
+  "day": "Wednesday",
+  "date": "2025-12-31",
+  "date_number": "31",
+  "date_suffix": "st",
   "date_month": "Dec",
   "children": {
     "C1": {
       "clothing": {
-        "code": "football_kit",
-        "label": "Football Kit"
+        "code": "uniform",
+        "label": "Uniform"
       },
       "pack": [
         {
-          "code": "uniform",
-          "label": "Uniform"
+          "code": "violin",
+          "label": "Violin"
         }
       ],
-      "dropoff": "07:30",
-      "pickup": "17:00",
+      "dropoff": "07:45",
+      "pickup": "15:45",
       "clubs": [
         {
-          "time": "07:30-08:30",
-          "name": "Girls Football (Westway)",
-          "short_name": "Football"
+          "time": "07:45-08:30",
+          "name": "Orchestra",
+          "short_name": "Orchestra"
         },
         {
-          "time": "16:00-17:00",
-          "name": "Creative Art Club",
-          "short_name": "Art"
+          "time": "12:30-13:15",
+          "name": "Touch-Typing",
+          "short_name": "Typing"
         }
       ],
-      "pack_display": "Uniform",
-      "pack_line": "Uniform",
+      "pack_display": "Violin",
+      "pack_line": "Violin",
       "pack_items": [
-        "Uniform",
+        "Violin",
         "-",
         "-"
       ],
-      "pack_item1": "Uniform",
+      "pack_item1": "Violin",
       "pack_item2": "-",
       "pack_item3": "-",
       "clubs_display": [
         {
-          "start": "07:30",
+          "start": "07:45",
           "end": "08:30",
-          "name": "Football"
+          "name": "Orchestra"
         },
         {
-          "start": "-",
-          "end": "-",
+          "start": "12:30",
+          "end": "13:15",
+          "name": "Typing"
+        },
+        {
+          "start": "15:45",
+          "end": "15:45",
           "name": "-"
-        },
-        {
-          "start": "16:00",
-          "end": "17:00",
-          "name": "Art"
         },
         {
           "start": "-",
@@ -62,8 +62,8 @@
           "name": "-"
         }
       ],
-      "drop_display": "07:30",
-      "pick_display": "17:00"
+      "drop_display": "07:45",
+      "pick_display": "15:45"
     },
     "C2": {
       "clothing": {
@@ -72,27 +72,22 @@
       },
       "pack": [],
       "dropoff": "08:15",
-      "pickup": "17:00",
+      "pickup": "16:00",
       "clubs": [
         {
-          "time": "08:00-08:30",
-          "name": "Morning Drawing Club",
-          "short_name": "Drawing"
-        },
-        {
           "time": "12:45-13:15",
-          "name": "Chamber Choir",
-          "short_name": "Chamb. Choir"
+          "name": "Technical Drawing",
+          "short_name": "Tech. Drawing"
         },
         {
-          "time": "16:00-17:00",
-          "name": "Creative Art Club",
-          "short_name": "Art"
+          "time": "08:00-08:30",
+          "name": "Advanced Art",
+          "short_name": "Adv. Art"
         },
         {
-          "time": "17:45-18:45",
-          "name": "Ballet at St Marys",
-          "short_name": "Ballet"
+          "time": "17:30-18:30",
+          "name": "Tutoring with Julia",
+          "short_name": "Tutor w/ Julia"
         }
       ],
       "pack_display": "",
@@ -109,26 +104,26 @@
         {
           "start": "08:00",
           "end": "08:30",
-          "name": "Drawing"
+          "name": "Adv. Art"
         },
         {
           "start": "12:45",
           "end": "13:15",
-          "name": "Chamb. Choir"
+          "name": "Tech. Drawing"
         },
         {
           "start": "16:00",
-          "end": "17:00",
-          "name": "Art"
+          "end": "16:00",
+          "name": "-"
         },
         {
-          "start": "17:45",
-          "end": "18:45",
-          "name": "Ballet"
+          "start": "17:30",
+          "end": "18:30",
+          "name": "Tutor w/ Julia"
         }
       ],
       "drop_display": "08:15",
-      "pick_display": "17:00"
+      "pick_display": "16:00"
     }
   }
 }
