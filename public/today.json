@@ -1,54 +1,34 @@
 {
-  "day": "Thursday",
-  "date": "2026-01-01",
-  "date_number": "1",
-  "date_suffix": "st",
+  "day": "Friday",
+  "date": "2026-01-02",
+  "date_number": "2",
+  "date_suffix": "nd",
   "date_month": "Jan",
   "children": {
     "C1": {
       "clothing": {
-        "code": "sports_kit",
-        "label": "Sports Kit"
+        "code": "uniform",
+        "label": "Uniform"
       },
-      "pack": [
-        {
-          "code": "uniform",
-          "label": "Uniform"
-        },
-        {
-          "code": "swim_kit",
-          "label": "Swim Stuff"
-        }
-      ],
-      "dropoff": "07:45",
+      "pack": [],
+      "dropoff": "08:15",
       "pickup": "15:45",
-      "clubs": [
-        {
-          "time": "07:45-08:30",
-          "name": "Fencing",
-          "short_name": "Fencing"
-        },
-        {
-          "time": "16:30-17:30",
-          "name": "Violin with Ms Vican",
-          "short_name": "Violin"
-        }
-      ],
-      "pack_display": "Uniform, Swim Stuff",
-      "pack_line": "Uniform, Swim Stuff",
+      "clubs": [],
+      "pack_display": "",
+      "pack_line": "-",
       "pack_items": [
-        "Uniform",
-        "Swim Stuff",
+        "-",
+        "-",
         "-"
       ],
-      "pack_item1": "Uniform",
-      "pack_item2": "Swim Stuff",
+      "pack_item1": "-",
+      "pack_item2": "-",
       "pack_item3": "-",
       "clubs_display": [
         {
-          "start": "07:45",
-          "end": "08:30",
-          "name": "Fencing"
+          "start": "08:15",
+          "end": "-",
+          "name": "-"
         },
         {
           "start": "-",
@@ -56,9 +36,9 @@
           "name": "-"
         },
         {
-          "start": "16:30",
-          "end": "17:30",
-          "name": "Violin"
+          "start": "15:45",
+          "end": "15:45",
+          "name": "-"
         },
         {
           "start": "-",
@@ -66,7 +46,7 @@
           "name": "-"
         }
       ],
-      "drop_display": "07:45",
+      "drop_display": "08:15",
       "pick_display": "15:45"
     },
     "C2": {
@@ -74,46 +54,30 @@
         "code": "uniform",
         "label": "Uniform"
       },
-      "pack": [
-        {
-          "code": "swim_kit",
-          "label": "Swim Stuff"
-        }
-      ],
+      "pack": [],
       "dropoff": "08:15",
       "pickup": "16:00",
-      "clubs": [
-        {
-          "time": "08:00-08:30",
-          "name": "Advanced Musicianship",
-          "short_name": "Adv. Music"
-        },
-        {
-          "time": "12:45-13:15",
-          "name": "Creative Competitors",
-          "short_name": "Creative Comp."
-        }
-      ],
-      "pack_display": "Swim Stuff",
-      "pack_line": "Swim Stuff",
+      "clubs": [],
+      "pack_display": "",
+      "pack_line": "-",
       "pack_items": [
-        "Swim Stuff",
+        "-",
         "-",
         "-"
       ],
-      "pack_item1": "Swim Stuff",
+      "pack_item1": "-",
       "pack_item2": "-",
       "pack_item3": "-",
       "clubs_display": [
         {
-          "start": "08:00",
-          "end": "08:30",
-          "name": "Adv. Music"
+          "start": "08:15",
+          "end": "-",
+          "name": "-"
         },
         {
-          "start": "12:45",
-          "end": "13:15",
-          "name": "Creative Comp."
+          "start": "-",
+          "end": "-",
+          "name": "-"
         },
         {
           "start": "16:00",
