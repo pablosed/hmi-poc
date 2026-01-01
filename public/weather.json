@@ -2,14 +2,14 @@
   "daily": [
     {
       "temp": {
-        "max": 3
+        "max": 3.28
       },
       "weather": [
         {
-          "main": "Clear"
+          "main": "Clouds"
         }
       ]
     }
   ],
-  "updated_at": "2025-12-31T23:15:33.063Z"
+  "updated_at": "2026-01-01T01:25:39.974Z"
 }
