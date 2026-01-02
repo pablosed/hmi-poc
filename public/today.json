@@ -1,14 +1,13 @@
 {
-  "day": "Friday",
-  "date": "2026-01-02",
-  "date_number": "2",
-  "date_suffix": "nd",
+  "day": "Saturday",
+  "date": "2026-01-03",
+  "date_number": "3",
+  "date_suffix": "rd",
   "date_month": "Jan",
   "children": {
     "C1": {
       "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
+        "label": ""
       },
       "pack": [],
       "dropoff": "08:15",
@@ -51,8 +50,7 @@
     },
     "C2": {
       "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
+        "label": ""
       },
       "pack": [],
       "dropoff": "08:15",
