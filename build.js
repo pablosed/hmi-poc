@@ -189,7 +189,8 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
       .map(entry => ({
         time: entry.time,
         name: entry.club,
-        short_name: shortNameForClub(entry.club)
+        short_name: shortNameForClub(entry.club),
+        category: entry.category || 'school'
       }));
 
     const startTime = (range) => {
@@ -207,16 +208,18 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
       return h * 60 + m;
     };
 
+    const schoolClubs = clubsForChild.filter(club => club.category !== 'offsite');
+    const offsiteClubs = clubsForChild.filter(club => club.category === 'offsite');
+
     const slotForStart = (start) => {
       const mins = toSortNum(start);
       if (mins < 660) return 0; // morning: before 11:00
       if (mins < 840) return 1; // lunch: 11:00–13:59
-      if (mins < 1020) return 2; // afternoon: 14:00–16:59
-      return 3; // after school: 17:00+
+      return 2; // pickup row: any school club from 14:00+
     };
 
-    const slots = [null, null, null, null];
-    for (const club of clubsForChild) {
+    const slots = [null, null, null];
+    for (const club of schoolClubs) {
       const start = startTime(club.time);
       const end = endTime(club.time);
       const slot = slotForStart(start);
@@ -224,7 +227,21 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
         slots[slot] = { start, end, name: club.short_name };
       }
     }
-    const clubs_display = slots.map(slot => slot || { start: '-', end: '-', name: '-' });
+
+    const offsiteSorted = [...offsiteClubs].sort((a, b) => {
+      return toSortNum(startTime(a.time)) - toSortNum(startTime(b.time));
+    });
+    const offsite = offsiteSorted[0];
+    const offsiteDisplay = offsite
+      ? { start: startTime(offsite.time) || '-', end: endTime(offsite.time) || '-', name: offsite.short_name }
+      : { start: '-', end: '-', name: '-' };
+
+    const clubs_display = [
+      slots[0] || { start: '-', end: '-', name: '-' },
+      slots[1] || { start: '-', end: '-', name: '-' },
+      slots[2] || { start: '-', end: '-', name: '-' },
+      offsiteDisplay
+    ];
 
     // Always show drop-off and pick-up times; override with club times when present.
     clubs_display[0].start = slots[0]?.start || dropoff;
@@ -232,8 +249,8 @@ function buildDay(dayName, isoDateString, dayConfig, clubSchedule, packSchedule)
     clubs_display[2].end = slots[2]?.end || pickup;
 
     // Add snack automatically for afternoon clubs (start between 15:00 and 17:00).
-    const hasAfternoonClub = clubs_display.some(c => {
-      const mins = toSortNum(c.start);
+    const hasAfternoonClub = schoolClubs.some(club => {
+      const mins = toSortNum(startTime(club.time));
       return mins >= 900 && mins < 1020; // 15:00–16:59
     });
     if (hasAfternoonClub && !packCodes.includes('snack')) {
@@ -330,6 +347,7 @@ function buildWeekV1(mondayDate, clubSchedule, exceptions) {
     const key = dayKeyMap[dayName];
     const clubs = (clubSchedule.clubs && clubSchedule.clubs[dayName]) || [];
     clubs.forEach(entry => {
+      if (entry.category === 'offsite') return;
       const token = weeklyTokenForClub(entry.club);
       const start = toMinutes(String(entry.time || '').split('-')[0]);
       const band = bandForStart(start);

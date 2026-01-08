@@ -60,7 +60,8 @@
         "participants": [
           "C2"
         ],
-        "club": "Ballet at St Marys"
+        "club": "Ballet at St Marys",
+        "category": "offsite"
       }
     ],
     "Wednesday": [
@@ -120,14 +121,16 @@
         "participants": [
           "C1"
         ],
-        "club": "Violin with Ms Vican"
+        "club": "Violin with Ms Vican",
+        "category": "offsite"
       },
       {
         "time": "16:30-17:30",
         "participants": [
           "C2"
         ],
-        "club": "Tutoring with Julia"
+        "club": "Tutoring with Julia",
+        "category": "offsite"
       }
     ]
   }
