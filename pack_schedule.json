@@ -14,7 +14,8 @@
     },
     "Tuesday": {
       "C1": [
-        "uniform"
+        "uniform",
+        "sports_kit"
       ],
       "C2": []
     },
@@ -22,7 +23,9 @@
       "C1": [
         "violin"
       ],
-      "C2": []
+      "C2": [
+        "sports_kit"
+      ]
     },
     "Thursday": {
       "C1": [
@@ -34,8 +37,12 @@
       ]
     },
     "Friday": {
-      "C1": [],
-      "C2": []
+      "C1": [
+        "rugby_kit"
+      ],
+      "C2": [
+        "hockey_kit"
+      ]
     }
   }
 }

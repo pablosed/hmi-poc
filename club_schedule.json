@@ -91,13 +91,6 @@
           "C2"
         ],
         "club": "Advanced Art"
-      },
-      {
-        "time": "17:30-18:30",
-        "participants": [
-          "C2"
-        ],
-        "club": "Tutoring with Julia"
       }
     ],
     "Thursday": [
@@ -128,6 +121,13 @@
           "C1"
         ],
         "club": "Violin with Ms Vican"
+      },
+      {
+        "time": "16:30-17:30",
+        "participants": [
+          "C2"
+        ],
+        "club": "Tutoring with Julia"
       }
     ]
   }
