@@ -26,12 +26,14 @@
         {
           "time": "07:45-08:30",
           "name": "Fencing",
-          "short_name": "Fencing"
+          "short_name": "Fencing",
+          "category": "school"
         },
         {
           "time": "16:30-17:30",
           "name": "Violin with Ms Vican",
-          "short_name": "Violin"
+          "short_name": "Violin",
+          "category": "offsite"
         }
       ],
       "pack_display": "Uniform, Swim Stuff",
@@ -56,14 +58,14 @@
           "name": "-"
         },
         {
+          "start": "15:45",
+          "end": "15:45",
+          "name": "-"
+        },
+        {
           "start": "16:30",
           "end": "17:30",
           "name": "Violin"
-        },
-        {
-          "start": "-",
-          "end": "-",
-          "name": "-"
         }
       ],
       "drop_display": "07:45",
@@ -86,17 +88,20 @@
         {
           "time": "08:00-08:30",
           "name": "Advanced Musicianship",
-          "short_name": "Adv. Music"
+          "short_name": "Adv. Music",
+          "category": "school"
         },
         {
           "time": "12:45-13:15",
           "name": "Creative Competitors",
-          "short_name": "Creative Comp."
+          "short_name": "Creative Comp.",
+          "category": "school"
         },
         {
           "time": "16:30-17:30",
           "name": "Tutoring with Julia",
-          "short_name": "Tutor w/ Julia"
+          "short_name": "Tutor w/ Julia",
+          "category": "offsite"
         }
       ],
       "pack_display": "Swim Stuff",
@@ -121,14 +126,14 @@
           "name": "Creative Comp."
         },
         {
+          "start": "16:00",
+          "end": "16:00",
+          "name": "-"
+        },
+        {
           "start": "16:30",
           "end": "17:30",
           "name": "Tutor w/ Julia"
-        },
-        {
-          "start": "-",
-          "end": "-",
-          "name": "-"
         }
       ],
       "drop_display": "08:15",

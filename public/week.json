@@ -44,8 +44,7 @@
           "ChChoir"
         ],
         "pm": [
-          "Art",
-          "Ballet"
+          "Art"
         ],
         "lesson": []
       }
@@ -78,9 +77,7 @@
           "Fence"
         ],
         "lunch": [],
-        "pm": [
-          "Violin"
-        ],
+        "pm": [],
         "lesson": []
       },
       "C2": {
@@ -90,9 +87,7 @@
         "lunch": [
           "Comp"
         ],
-        "pm": [
-          "Tutor"
-        ],
+        "pm": [],
         "lesson": []
       }
     },
