@@ -68,9 +68,7 @@
         "lunch": [
           "TechDraw"
         ],
-        "pm": [
-          "Tutor"
-        ],
+        "pm": [],
         "lesson": []
       }
     },
@@ -92,7 +90,9 @@
         "lunch": [
           "Comp"
         ],
-        "pm": [],
+        "pm": [
+          "Tutor"
+        ],
         "lesson": []
       }
     },
