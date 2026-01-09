@@ -1,32 +1,26 @@
 {
-  "day": "Friday",
-  "date": "2026-01-09",
-  "date_number": "9",
+  "day": "Saturday",
+  "date": "2026-01-10",
+  "date_number": "10",
   "date_suffix": "th",
   "date_month": "Jan",
   "children": {
     "C1": {
       "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
+        "label": ""
       },
-      "pack": [
-        {
-          "code": "rugby_kit",
-          "label": "Rugby Kit"
-        }
-      ],
+      "pack": [],
       "dropoff": "08:15",
       "pickup": "15:45",
       "clubs": [],
-      "pack_display": "Rugby Kit",
-      "pack_line": "Rugby Kit",
+      "pack_display": "",
+      "pack_line": "-",
       "pack_items": [
-        "Rugby Kit",
+        "-",
         "-",
         "-"
       ],
-      "pack_item1": "Rugby Kit",
+      "pack_item1": "-",
       "pack_item2": "-",
       "pack_item3": "-",
       "clubs_display": [
@@ -56,26 +50,20 @@
     },
     "C2": {
       "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
+        "label": ""
       },
-      "pack": [
-        {
-          "code": "hockey_kit",
-          "label": "Hockey Kit"
-        }
-      ],
+      "pack": [],
       "dropoff": "08:15",
       "pickup": "16:00",
       "clubs": [],
-      "pack_display": "Hockey Kit",
-      "pack_line": "Hockey Kit",
+      "pack_display": "",
+      "pack_line": "-",
       "pack_items": [
-        "Hockey Kit",
+        "-",
         "-",
         "-"
       ],
-      "pack_item1": "Hockey Kit",
+      "pack_item1": "-",
       "pack_item2": "-",
       "pack_item3": "-",
       "clubs_display": [
