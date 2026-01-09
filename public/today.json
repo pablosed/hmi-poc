@@ -1,7 +1,7 @@
 {
-  "day": "Thursday",
-  "date": "2026-01-08",
-  "date_number": "8",
+  "day": "Friday",
+  "date": "2026-01-09",
+  "date_number": "9",
   "date_suffix": "th",
   "date_month": "Jan",
   "children": {
@@ -16,128 +16,158 @@
           "label": "Uniform"
         },
         {
+          "code": "rugby_kit",
+          "label": "Rugby Kit"
+        },
+        {
           "code": "swim_kit",
           "label": "Swim Stuff"
         }
       ],
-      "dropoff": "07:45",
-      "pickup": "15:45",
+      "dropoff": "07:30",
+      "pickup": "17:00",
       "clubs": [
         {
-          "time": "07:45-08:30",
-          "name": "Fencing",
-          "short_name": "Fencing",
+          "time": "07:30-08:15",
+          "name": "Breakfast Club",
+          "short_name": "Breakfast",
           "category": "school"
         },
         {
-          "time": "16:30-17:30",
-          "name": "Violin with Ms Vican",
-          "short_name": "Violin",
+          "time": "12:10-12:50",
+          "name": "Chess Club",
+          "short_name": "Chess",
+          "category": "school"
+        },
+        {
+          "time": "15:45-17:00",
+          "name": "Drama Club",
+          "short_name": "Drama",
+          "category": "school"
+        },
+        {
+          "time": "17:30-18:15",
+          "name": "Ballet",
+          "short_name": "Ballet",
           "category": "offsite"
         }
       ],
-      "pack_display": "Uniform, Swim Stuff",
-      "pack_line": "Uniform, Swim Stuff",
+      "pack_display": "Uniform, Rugby Kit, Swim Stuff",
+      "pack_line": "Uniform, Rugby Kit, Swim Stuff",
       "pack_items": [
         "Uniform",
-        "Swim Stuff",
-        "-"
+        "Rugby Kit",
+        "Swim Stuff"
       ],
       "pack_item1": "Uniform",
-      "pack_item2": "Swim Stuff",
-      "pack_item3": "-",
+      "pack_item2": "Rugby Kit",
+      "pack_item3": "Swim Stuff",
       "clubs_display": [
         {
-          "start": "07:45",
-          "end": "08:30",
-          "name": "Fencing"
+          "start": "07:30",
+          "end": "08:15",
+          "name": "Breakfast"
         },
         {
-          "start": "-",
-          "end": "-",
-          "name": "-"
+          "start": "12:10",
+          "end": "12:50",
+          "name": "Chess"
         },
         {
           "start": "15:45",
-          "end": "15:45",
-          "name": "-"
+          "end": "17:00",
+          "name": "Drama"
         },
         {
-          "start": "16:30",
-          "end": "17:30",
-          "name": "Violin"
+          "start": "17:30",
+          "end": "18:15",
+          "name": "Ballet"
         }
       ],
-      "drop_display": "07:45",
-      "pick_display": "15:45"
+      "drop_display": "07:30",
+      "pick_display": "17:00"
     },
     "C2": {
       "clothing": {
-        "code": "uniform",
-        "label": "Uniform"
+        "code": "sports_kit",
+        "label": "Sports Kit"
       },
       "pack": [
         {
-          "code": "swim_kit",
-          "label": "Swim Stuff"
+          "code": "hockey_kit",
+          "label": "Hockey Kit"
+        },
+        {
+          "code": "art_folder",
+          "label": "Art Folder"
+        },
+        {
+          "code": "library_book",
+          "label": "Library Book"
         }
       ],
-      "dropoff": "08:15",
-      "pickup": "16:00",
+      "dropoff": "07:45",
+      "pickup": "17:15",
       "clubs": [
         {
-          "time": "08:00-08:30",
-          "name": "Advanced Musicianship",
-          "short_name": "Adv. Music",
+          "time": "07:45-08:20",
+          "name": "Coding Club",
+          "short_name": "Coding",
           "category": "school"
         },
         {
-          "time": "12:45-13:15",
-          "name": "Creative Competitors",
-          "short_name": "Creative Comp.",
+          "time": "12:30-13:00",
+          "name": "Science Club",
+          "short_name": "Science",
           "category": "school"
         },
         {
-          "time": "16:30-17:30",
-          "name": "Tutoring with Julia",
-          "short_name": "Tutor w/ Julia",
+          "time": "16:00-17:15",
+          "name": "Football Club",
+          "short_name": "Football",
+          "category": "school"
+        },
+        {
+          "time": "17:45-18:30",
+          "name": "Tutor w/ Julia",
+          "short_name": "Tutor",
           "category": "offsite"
         }
       ],
-      "pack_display": "Swim Stuff",
-      "pack_line": "Swim Stuff",
+      "pack_display": "Hockey Kit, Art Folder, Library Book",
+      "pack_line": "Hockey Kit, Art Folder, Library Book",
       "pack_items": [
-        "Swim Stuff",
-        "-",
-        "-"
+        "Hockey Kit",
+        "Art Folder",
+        "Library Book"
       ],
-      "pack_item1": "Swim Stuff",
-      "pack_item2": "-",
-      "pack_item3": "-",
+      "pack_item1": "Hockey Kit",
+      "pack_item2": "Art Folder",
+      "pack_item3": "Library Book",
       "clubs_display": [
         {
-          "start": "08:00",
-          "end": "08:30",
-          "name": "Adv. Music"
+          "start": "07:45",
+          "end": "08:20",
+          "name": "Coding"
         },
         {
-          "start": "12:45",
-          "end": "13:15",
-          "name": "Creative Comp."
+          "start": "12:30",
+          "end": "13:00",
+          "name": "Science"
         },
         {
           "start": "16:00",
-          "end": "16:00",
-          "name": "-"
+          "end": "17:15",
+          "name": "Football"
         },
         {
-          "start": "16:30",
-          "end": "17:30",
+          "start": "17:45",
+          "end": "18:30",
           "name": "Tutor w/ Julia"
         }
       ],
-      "drop_display": "08:15",
-      "pick_display": "16:00"
+      "drop_display": "07:45",
+      "pick_display": "17:15"
     }
   }
 }
