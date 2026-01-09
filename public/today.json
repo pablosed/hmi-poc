@@ -1,1 +1,107 @@
-{"day":"Friday","date":"2026-01-09","date_number":"9","date_suffix":"th","date_month":"Jan","children":{"C1":{"clothing":{"label":"Sports Kit"},"clubs_display":[{"start":"08:15","name":"Chess"},{"start":"12:30","name":"Art Club"},{"end":"17:00","name":"Football"},{"start":"18:00","name":"Ballet"}],"pack_items":["Rugby Kit","Water Bottle","Hat"]},"C2":{"clothing":{"label":"Sports Kit"},"clubs_display":[{"start":"08:30","name":"Science"},{"start":"12:45","name":"Drama"},{"end":"17:15","name":"Hockey"},{"start":"18:30","name":"Tutor Julia"}],"pack_items":["Hockey Kit","Snack","Book"]}}}
+{
+  "day": "Friday",
+  "date": "2026-01-09",
+  "date_number": "9",
+  "date_suffix": "th",
+  "date_month": "Jan",
+  "children": {
+    "C1": {
+      "clothing": {
+        "code": "uniform",
+        "label": "Uniform"
+      },
+      "pack": [
+        {
+          "code": "rugby_kit",
+          "label": "Rugby Kit"
+        }
+      ],
+      "dropoff": "08:15",
+      "pickup": "15:45",
+      "clubs": [],
+      "pack_display": "Rugby Kit",
+      "pack_line": "Rugby Kit",
+      "pack_items": [
+        "Rugby Kit",
+        "-",
+        "-"
+      ],
+      "pack_item1": "Rugby Kit",
+      "pack_item2": "-",
+      "pack_item3": "-",
+      "clubs_display": [
+        {
+          "start": "08:15",
+          "end": "-",
+          "name": "-"
+        },
+        {
+          "start": "-",
+          "end": "-",
+          "name": "-"
+        },
+        {
+          "start": "15:45",
+          "end": "15:45",
+          "name": "-"
+        },
+        {
+          "start": "-",
+          "end": "-",
+          "name": "-"
+        }
+      ],
+      "drop_display": "08:15",
+      "pick_display": "15:45"
+    },
+    "C2": {
+      "clothing": {
+        "code": "uniform",
+        "label": "Uniform"
+      },
+      "pack": [
+        {
+          "code": "hockey_kit",
+          "label": "Hockey Kit"
+        }
+      ],
+      "dropoff": "08:15",
+      "pickup": "16:00",
+      "clubs": [],
+      "pack_display": "Hockey Kit",
+      "pack_line": "Hockey Kit",
+      "pack_items": [
+        "Hockey Kit",
+        "-",
+        "-"
+      ],
+      "pack_item1": "Hockey Kit",
+      "pack_item2": "-",
+      "pack_item3": "-",
+      "clubs_display": [
+        {
+          "start": "08:15",
+          "end": "-",
+          "name": "-"
+        },
+        {
+          "start": "-",
+          "end": "-",
+          "name": "-"
+        },
+        {
+          "start": "16:00",
+          "end": "16:00",
+          "name": "-"
+        },
+        {
+          "start": "-",
+          "end": "-",
+          "name": "-"
+        }
+      ],
+      "drop_display": "08:15",
+      "pick_display": "16:00"
+    }
+  }
+}
